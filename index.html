@@ -1,48 +1,160 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Reciclagem</title>
-    <!-- css -->
-    <link rel="stylesheet" href="css/style.css" />
-    <!-- javascript -->
-    <script src="js/script.js"></script>
-    <!-- awesome icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    />
-  </head>
-  <body>
-    <header>
-      <div class="container-header">
-        <nav>
-          <div class="nav-icon">
-            <a href="#home"><i class="fas fa-seedling"></i></a>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reciclagem</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="shortcut icon" href="./images/favicon/raciclagem-favicon.png" type="image/x-icon">
+</head>
+
+<body>
+  <!-- Cabeçalho -->
+  <header>
+    <div class="container cabecalho">
+      <div class="logo">
+        <img src="images/plant-logo.png" alt="Logo Reciclagem" class="logo-img">
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#" class="active">Início</a></li>
+          <li><a href="#">Tipos de Resíduos</a></li>
+          <li><a href="#">Dicas</a></li>
+          <li><a href="#">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Destaque -->
+  <section class="destaque">
+    <img src="images/lixeiras-de-reciclagem.webp" alt="Lixeiras de reciclagem" class="destaque-img">
+    <div class="sobreposicao"></div>
+    <div class="container conteudo-destaque">
+      <h1>Cada atitude conta.</h1>
+      <p>Recicle com consciência.</p>
+    </div>
+  </section>
+
+  <!-- Tipos de Resíduos -->
+<section class="tipos-residuos">
+  <div class="container">
+    <h2>Tipos de Resíduos</h2>
+    <div class="tabela">
+      <table>
+        <thead>
+          <tr>
+            <th>Cor</th>
+            <th>Resíduos</th>
+            <th>Exemplos</th>
+            <th>Ação</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="azul">
+            <td>Azul</td>
+            <td>Papel/Papelão</td>
+            <td>Jornais, revistas, caixas, papelão e embalagens de papel</td>
+            <td><a href="papel.html" class="btn">Ver Mais</a></td>
+          </tr>
+          <tr class="vermelho">
+            <td>Vermelho</td>
+            <td>Plástico</td>
+            <td>Garrafas, embalagens, sacolas e recipientes plásticos</td>
+            <td><a href="plastico.html" class="btn">Ver Mais</a></td>
+          </tr>
+          <tr class="verde">
+            <td>Verde</td>
+            <td>Vidro</td>
+            <td>Garrafas, potes, frascos e outros recipientes de vidro</td>
+            <td><a href="vidro.html" class="btn">Ver Mais</a></td>
+          </tr>
+          <tr class="amarelo">
+            <td>Amarelo</td>
+            <td>Metal</td>
+            <td>Latas de alumínio, tampas e outros objetos de metal</td>
+            <td><a href="metal.html" class="btn">Ver Mais</a></td>
+          </tr>
+          <tr class="marrom">
+            <td>Marrom</td>
+            <td>Orgânico</td>
+            <td>Restos de alimentos, cascas de frutas e resíduos de jardim</td>
+            <td><a href="organico.html" class="btn">Ver Mais</a></td>
+          </tr>
+          <tr class="cinza">
+            <td>Cinza</td>
+            <td>Não reciclável</td>
+            <td>Lixo que não se encaixa nas outras categorias</td>
+            <td><a href="nao-reciclavel.html" class="btn">Ver Mais</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Benefícios -->
+  <section class="beneficios">
+    <div class="container">
+      <h3>Por que reciclar?</h3>
+      <div class="grade-beneficios">
+        <div class="cartao-beneficio">
+          <div class="icon">
+            <i class="fas fa-trash-restore" style="color: #219653"></i>
           </div>
-          <div class="nav-link">
-            <ul>
-              <li><a href="#home">Home</a></li>
-              <li><a href="#types">Tipos de resíduos</a></li>
-              <li><a href="#tips">Dicas</a></li>
-              <li><a href="#contact">Contato</a></li>
-            </ul>
+          <h4>Redução do lixo nos aterros</h4>
+          <p>Diminui o volume de lixo que vai para os aterros sanitários.</p>
+        </div>
+        <div class="cartao-beneficio">
+          <div class="icon">
+            <i class="fas fa-leaf" style="color: #219653"></i>
           </div>
-          <button>Saiba mais <i class="fas fa-arrow-down"></i></button>
-        </nav>
-        <div class="head-container">
-          <div class="head">
-            <h1>Preserve nosso planeta</h1>
-            <p>
-              Todos nós devemos descartar corretamente o lixo que produzimos
-            </p>
-            <button>Saiba mais <i class="fas fa-arrow-down"></i></button>
+          <h4>Preservação dos recursos naturais</h4>
+          <p>Reduz a extração de matéria-prima da natureza.</p>
+        </div>
+        <div class="cartao-beneficio">
+          <div class="icon">
+            <i class="fas fa-dollar-sign" style="color: #219653"></i>
           </div>
+          <h4>Gera economia e empregos</h4>
+          <p>A reciclagem gera empregos e economia de recursos.</p>
+        </div>
+        <div class="cartao-beneficio">
+          <div class="icon">
+            <i class="fas fa-globe-americas" style="color: #219653"></i>
+          </div>
+          <h4>Protege o meio ambiente</h4>
+          <p>Diminui a poluição do solo, da água e do ar.</p>
         </div>
       </div>
-    </header>
-    <main></main>
-    <footer></footer>
-  </body>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer>
+    <div class="container">
+      <div class="conteudo-rodape">
+        <div class="logo-rodape">
+          <img src="images/plant-logo.png" alt="Logo Reciclagem" class="rodape-logo-img">
+          <h3>Siga-nos</h3>
+          <div class="redes-sociais-icon">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+        <div class="contato-info">
+          <h3>Contato</h3>
+          <p>contato@reciclagemsustentavel.com.br</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>
