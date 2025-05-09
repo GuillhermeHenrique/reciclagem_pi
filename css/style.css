@@ -136,15 +136,16 @@ td {
 }
 
 th {
-  background: #f0f0f0;
+  background: #2C3E50;
   font-weight: 700;
   border-bottom: 2px solid #999;
+  color: white;
 }
 
 .btn {
   display: inline-block;
   padding: 8px 12px;
-  background-color: #219653;
+  background-color: #949494;
   color: white;
   border-radius: 4px;
   text-align: center;
@@ -153,37 +154,37 @@ th {
 }
 
 .btn:hover {
-  background-color: #1b7c44;
+  background-color: #219653;
 }
 
 
 tr.azul>td:first-child {
-  background: #2196F3;
+  background: #3498DB;
   color: white;
 }
 
 tr.vermelho>td:first-child {
-  background: #F44336;
+  background: #E73C3C;
   color: white;
 }
 
 tr.verde>td:first-child {
-  background: #4CAF50;
+  background: #2ECC71;
   color: white;
 }
 
 tr.amarelo>td:first-child {
-  background: #FFEB3B;
+  background: #F1C40F;
   color: #333;
 }
 
 tr.marrom>td:first-child {
-  background: #795548;
+  background: #8B4513;
   color: white;
 }
 
 tr.cinza>td:first-child {
-  background: #9E9E9E;
+  background: #95A5A6;
   color: white;
 }
 
@@ -234,7 +235,7 @@ tr:nth-child(even) {
 
 /* Rodapé */
 footer {
-  background-color: #263238;
+  background-color: #2C3E50;
   color: white;
   padding: 40px 0;
 }
