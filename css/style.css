@@ -12,12 +12,16 @@ body {
 
 /* Header */
 header {
-  background-image: url("https://img.freepik.com/fotos-gratis/agua-da-chuva-em-um-macro-verde-da-folha_1150-12804.jpg?t=st=1744840382~exp=1744843982~hmac=5bfb13c961a7ddfd41c826e21afcefacdeb915092916d0f528139b90be650283&w=996");
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 70%,
+      rgba(0, 0, 0, 0.98) 100%
+    ),
+    url("../img/imagem-natureza.jpg");
   background-position: center;
   background-size: cover;
   padding-top: 15px;
   height: 100vh;
-  margin-bottom: 400px;
 }
 
 nav {
@@ -70,9 +74,11 @@ nav button:hover {
 }
 
 .head {
-  text-align: center;
-  margin: 20vh 0;
+  text-align: start;
+  margin-left: 140px;
+  margin-top: 20vh;
   font-size: 30px;
+  width: 40%;
 }
 
 .head h1,
@@ -97,5 +103,159 @@ nav button:hover {
 }
 
 /* Main */
+
+.trash-bins {
+  height: 60vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: #000;
+}
+
+.bins {
+  height: 50vh;
+  width: 30vh;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.bins p {
+  margin-top: 43vh;
+  font-size: 25px;
+}
+
+.organic {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 30%,
+      rgba(0, 0, 0, 0.9) 100%
+    ),
+    url("../img/organico.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.plastic {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 60%,
+      rgba(0, 0, 0, 0.9) 100%
+    ),
+    url("../img/plastico.avif");
+  background-position: center;
+  background-size: cover;
+}
+
+.paper {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 60%,
+      rgba(0, 0, 0, 0.9) 100%
+    ),
+    url("../img/papel.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.glass {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 60%,
+      rgba(0, 0, 0, 0.9) 100%
+    ),
+    url("../img/vidro.webp");
+  background-position: center;
+  background-size: cover;
+}
+
+/* .initial-text {
+  background-color: #e5e5e5;
+  color: #000;
+  padding: 20px 50px;
+  text-align: center;
+}
+
+.initial-text h2 {
+  padding-bottom: 10px;
+}
+
+.initial-text p {
+  padding-bottom: 5px;
+}
+
+
+
+.plastic {
+  display: flex;
+  color: #000;
+  height: 50vh;
+  background-color: #e5e5e5;
+}
+
+.plastic-image {
+  width: 50%;
+  height: 100%;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+}
+
+.plastic-image img {
+  height: 50vh;
+}
+
+.plastic-text {
+  width: 50%;
+  height: 100%;
+  text-align: start;
+  padding: 30px;
+}
+
+.plastic-text h2 {
+  margin-bottom: 20px;
+}
+
+.plastic-text p {
+  padding-bottom: 10px;
+}
+
+
+
+.organic {
+  display: flex;
+  color: #000;
+  height: 50vh;
+  background-color: #e5e5e5;
+}
+
+.organic-text {
+  width: 50%;
+  height: 100%;
+  text-align: start;
+  padding: 30px;
+}
+
+.organic-text h2 {
+  margin-bottom: 20px;
+}
+
+.organic-text p {
+  padding-bottom: 10px;
+}
+
+.organic-image {
+  width: 50%;
+  height: 100%;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+}
+
+.organic-image img {
+  height: 50vh;
+} */
 
 /* Footer */
