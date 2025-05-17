@@ -11,6 +11,11 @@ body {
   color: #333;
 }
 
+main{
+  text-align: center;
+  font-weight: bold;
+}
+
 .container {
   width: 90%;
   max-width: 1200px;
@@ -65,6 +70,7 @@ nav ul li a:hover,
 nav ul li a.active {
   background-color: #219653;
   color: white;
+  text-decoration: none;
 }
 
 /* Destaque */
@@ -136,15 +142,16 @@ td {
 }
 
 th {
-  background: #f0f0f0;
+  background: #2C3E50;
   font-weight: 700;
   border-bottom: 2px solid #999;
+  color: white;
 }
 
 .btn {
   display: inline-block;
   padding: 8px 12px;
-  background-color: #219653;
+  background-color: #949494;
   color: white;
   border-radius: 4px;
   text-align: center;
@@ -153,37 +160,37 @@ th {
 }
 
 .btn:hover {
-  background-color: #1b7c44;
+  background-color: #219653;
 }
 
 
 tr.azul>td:first-child {
-  background: #2196F3;
+  background: #3498DB;
   color: white;
 }
 
 tr.vermelho>td:first-child {
-  background: #F44336;
+  background: #E73C3C;
   color: white;
 }
 
 tr.verde>td:first-child {
-  background: #4CAF50;
+  background: #2ECC71;
   color: white;
 }
 
 tr.amarelo>td:first-child {
-  background: #FFEB3B;
+  background: #F1C40F;
   color: #333;
 }
 
 tr.marrom>td:first-child {
-  background: #795548;
+  background: #8B4513;
   color: white;
 }
 
 tr.cinza>td:first-child {
-  background: #9E9E9E;
+  background: #95A5A6;
   color: white;
 }
 
@@ -234,9 +241,11 @@ tr:nth-child(even) {
 
 /* Rodapé */
 footer {
-  background-color: #263238;
+  background-color: #2C3E50;
   color: white;
   padding: 40px 0;
+  margin-top: 150px;
+  
 }
 
 .conteudo-rodape {
@@ -248,6 +257,10 @@ footer {
 .logo-rodape,
 .contato-info {
   margin-bottom: 20px;
+}
+
+.contato-info{
+  margin-top: 65px;
 }
 
 .rodape-logo-img {
@@ -279,18 +292,22 @@ footer {
 
 .redes-sociais-icon a:hover:nth-child(1) {
   background-color: #E1306C;
+  text-decoration: none;
 }
 
 .redes-sociais-icon a:hover:nth-child(2) {
   background-color: #1877F2;
+  text-decoration: none;
 }
 
 .redes-sociais-icon a:hover:nth-child(3) {
   background-color: #0A66C2;
+  text-decoration: none;
 }
 
 .redes-sociais-icon a:hover:nth-child(4) {
   background-color: #1DA1F2;
+  text-decoration: none;
 }
 
 
@@ -337,7 +354,55 @@ footer {
     margin: 5px;
   }
 
+  nav ul li a{
+    text-decoration: none;
+  }
+
   .grade-beneficios {
     grid-template-columns: 1fr;
   }
+}
+
+.header {
+      font-weight: bold;
+      margin-bottom: 30px;
+      margin-top: 30px;
+      text-align: center;
+      
+    }
+
+    .section {
+      margin: 40px 0;
+      text-align: center;
+    }
+
+    .professor {
+      margin-bottom: 50px;
+      text-align: center;
+    }
+
+    .alunos {
+      
+  text-align: left;
+  display: block;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: 0;
+  margin-bottom: 60px;
+    }
+    .footer{
+      text-align: center;
+    }
+    
+    .leave {
+  background-color: #6a6f74;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.leave i {
+  color: white;
+  font-size: 20px;
 }
