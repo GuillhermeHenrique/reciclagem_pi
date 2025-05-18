@@ -164,7 +164,7 @@ nav ul li a.active {
 
 .icon {
   font-size: 2rem;
-  color: #3498DB;
+  color: #E73C3C;
   margin-bottom: 15px;
 }
 
@@ -189,7 +189,7 @@ nav ul li a.active {
 .lista-processo li:before {
   content: counter(list-item);
   counter-increment: list-item;
-  color: #3498DB;
+  color: #E73C3C;
   font-weight: bold;
   margin-right: 10px;
 }
@@ -212,7 +212,7 @@ nav ul li a.active {
   top: 8px;
   width: 15px;
   height: 2px;
-  background-color: #3498DB;
+  background-color: #E73C3C;
 }
 
 /* Seção de Dicas */
@@ -254,7 +254,7 @@ nav ul li a.active {
 }
 
 .dica-item h3 {
-  color: #3498DB;
+  color: #E73C3C;
   margin: 15px 20px 10px;
 }
 
@@ -266,7 +266,7 @@ nav ul li a.active {
 
 /* Curiosidades */
 .card-curiosidade {
-  background-color: #3498DB;
+  background-color: #E73C3C;
   color: white;
   padding: 40px;
   border-radius: 8px;
@@ -300,11 +300,11 @@ nav ul li a.active {
   list-style: none;
 }
 
-/* Botão Azul */
+/* Botão vermelho */
 .btn {
   display: inline-block;
   padding: 8px 12px;
-  background-color: #3498DB;
+  background-color: #E73C3C;
   color: white;
   border-radius: 4px;
   text-align: center;
@@ -312,19 +312,19 @@ nav ul li a.active {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.btn-azul {
-  background-color: #3498DB !important;
+.btn-vermelho {
+  background-color: #ea5959 !important;
   padding: 12px 30px !important;
   font-size: 1rem !important;
   margin-top: 20px;
 }
 
-.btn-azul:hover {
-  background-color: #2980B9 !important;
+.btn-vermelho:hover {
+  background-color: #B83030 !important;
   color: white !important;
 }
 
-.btn-azul i {
+.btn-vermelho i {
   margin-right: 8px;
 }
 
