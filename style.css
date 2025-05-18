@@ -148,6 +148,7 @@ th {
   color: white;
 }
 
+/* Estilo base do botão */
 .btn {
   display: inline-block;
   padding: 8px 12px;
@@ -156,11 +157,46 @@ th {
   border-radius: 4px;
   text-align: center;
   font-weight: bold;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.btn:hover {
-  background-color: #219653;
+/* Cores específicas para cada tipo de resíduo */
+.azul .btn:hover {
+  background-color: #3498DB;
+}
+
+.vermelho .btn:hover {
+  background-color: #E73C3C;
+}
+
+.verde .btn:hover {
+  background-color: #2ECC71;
+}
+
+.amarelo .btn:hover {
+  background-color: #F1C40F;
+  color: #333;
+}
+
+.marrom .btn:hover {
+  background-color: #8B4513;
+}
+
+.cinza .btn:hover {
+  background-color: #95A5A6;
+}
+
+.laranja .btn:hover {
+  background-color: #e67e22;
+}
+
+.preto .btn:hover {
+  background-color: #212121;
+}
+
+/* Garantir texto branco em todos os hovers, exceto amarelo */
+tr:not(.amarelo) .btn:hover {
+  color: white;
 }
 
 
@@ -191,6 +227,16 @@ tr.marrom>td:first-child {
 
 tr.cinza>td:first-child {
   background: #95A5A6;
+  color: white;
+}
+
+tr.laranja>td:first-child {
+  background: #e67e22;
+  color: white;
+}
+
+tr.preto>td:first-child {
+  background: #212121;
   color: white;
 }
 
@@ -361,48 +407,4 @@ footer {
   .grade-beneficios {
     grid-template-columns: 1fr;
   }
-}
-
-.header {
-      font-weight: bold;
-      margin-bottom: 30px;
-      margin-top: 30px;
-      text-align: center;
-      
-    }
-
-    .section {
-      margin: 40px 0;
-      text-align: center;
-    }
-
-    .professor {
-      margin-bottom: 50px;
-      text-align: center;
-    }
-
-    .alunos {
-      
-  text-align: left;
-  display: block;
-  width: fit-content;
-  margin-left: auto;
-  margin-right: 0;
-  margin-bottom: 60px;
-    }
-    .footer{
-      text-align: center;
-    }
-    
-    .leave {
-  background-color: #6a6f74;
-  border: none;
-  padding: 10px 15px;
-  border-radius: 50%;
-  cursor: pointer;
-}
-
-.leave i {
-  color: white;
-  font-size: 20px;
 }

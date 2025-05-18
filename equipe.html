@@ -1,62 +1,87 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Equipe do Projeto</title>
-
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Equipe do Projeto</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="shortcut icon" href="./images/favicon/raciclagem-favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="./css/equipe.css" />
+  <link rel="shortcut icon" href="./images/favicon/raciclagem-favicon.png" type="image/x-icon" />
 </head>
+
 <body>
-    
+  <!-- Cabeçalho -->
+  <header>
+    <div class="container cabecalho">
+      <div class="logo">
+        <img src="images/plant-logo.png" alt="Logo Reciclagem" class="logo-img">
+      </div>
+      <nav>
+        <ul>
+          <li><a href="./index.html">Início</a></li>
+          <li><a href="/pages/blog.html">Blog</a></li>
+          <li><a href="/contato.html">Contato</a></li>
+          <li><a href="/equipe.html" class="active">Equipe</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <div class="header">
-    <div>FATEC - Faculdade de Tecnologia do Estado de São Paulo</div>
-    <div>Campus Indaiatuba - Dr. Archimedes Lammoglia</div>
-    <div>Curso Superior de Desenvolvimento de Software Multiplataforma</div>
-    <div>Disciplina de Engenharia de Software I</div>
-  </div>
+  <main class="conteudo-principal">
+    <section class="sobre-projeto">
+      <h2>Projeto Integrador</h2>
+      <h3>Site de Reciclagem de Materiais</h3>
+      <h4>Semana de Tecnologia-DSM</h4>
+    </section>
 
-  <div class="section">
-    <div><strong>Projeto Integrador</strong></div>
-    <div><strong>Site Reciclagem de Materiais</strong></div>
-    <div><strong>Semana de Tecnologia-DSM</strong></div>
-  </div>
+    <section class="professor">
+      <h3>Professor</h3>
+      <p><strong>Jones Artur Gonçalves</strong></p>
+    </section>
 
-  <div class="professor">
-    <div><strong>Prof. Jones Artur Gonçalves</strong></div>
-    <div><strong>Prof. Jones Artur Gonçalves</strong></div>
-    <div><strong>Prof. Jones Artur Gonçalves</strong></div>
-  </div>
+    <section class="alunos">
+      <h3>Alunos</h3>
+      <ul class="lista-alunos">
+        <li>Bruno Juni Giacomini - 1051392511010</li>
+        <li>Guilherme Henrique O. Pires - 1051392511004</li>
+        <li>Júlia Aguiar de Moura Moisés - 1051392511025</li>
+        <li>Lucas Pereira de Oliveira - 1051392511043</li>
+        <li>Mateus Prince Antunes - 1051392511014</li>
+        <li>Vitor Gabriel de Amorim - 1051392511042</li>
+      </ul>
+    </section>
+  </main>
 
-  <div class="alunos">
-    <div><strong>Alunos:</strong></div><br>
-    <div>Bruno Juni Giacomini - 1051392511010</div>
-    <div>Guilherme Henrique O. Pires - 1051392511004</div>
-    <div>Júlia Aguiar de Moura Moisés - 1051392511025</div>
-    <div>Lucas Pereira de Oliveira - 1051392511043</div>
-    <div>Mateus Prince Antunes - 1051392511014</div>
-    <div>Vitor Gabriel de Amorim - 1051392511042</div>
-  </div>
+  <!-- Rodapé -->
+  <footer>
+    <div class="container">
+      <div class="conteudo-rodape">
+        <div class="logo-rodape">
+          <img src="images/plant-logo.png" alt="Logo Reciclagem" class="rodape-logo-img">
+          <h3>Siga-nos</h3>
+          <div class="redes-sociais-icon">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+        <div class="contato-info">
+          <h3>Contato</h3>
+          <p>contato@reciclagemsustentavel.com.br</p>
+        </div>
+      </div>
+    </div>
+  </footer>
 
-  <div class="footer">
-    <div>19 de maio de 2025</div>
-    <div>Indaiatuba – SP</div>
-  </div>
-    <a href="/index.html" class="btn leave">
-    <i class="bi bi-arrow-left-circle"></i>
-    </a>
-
-    
 
       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
       <script src="/js/script.js"></script>
 </body>
+
 </html>
