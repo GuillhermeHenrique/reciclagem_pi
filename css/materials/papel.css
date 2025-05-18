@@ -73,6 +73,21 @@ nav ul li a.active {
   text-decoration: none;
 }
 
+ol {
+  list-style: decimal;
+  padding-left: 20px;
+  color: black;
+}
+
+ol li {
+  margin-bottom: 10px;
+}
+
+ol li::marker {
+  color: #3498DB; /* cor azul nos números */
+  font-weight: bold;
+}
+
 /* Destaque */
 .destaque {
   height: 400px;
@@ -175,9 +190,7 @@ nav ul li a.active {
 
 /* Listas */
 .lista-processo {
-  text-align: left;
-  padding-left: 20px;
-  counter-reset: list-item;
+  counter-reset: passo;
 }
 
 .lista-processo li {
@@ -186,9 +199,9 @@ nav ul li a.active {
   list-style-type: none;
 }
 
-.lista-processo li:before {
-  content: counter(list-item);
-  counter-increment: list-item;
+.lista-processo li::before {
+  content: counter(passo);
+  counter-increment: passo;
   color: #3498DB;
   font-weight: bold;
   margin-right: 10px;

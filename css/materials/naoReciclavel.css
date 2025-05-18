@@ -175,9 +175,7 @@ nav ul li a.active {
 
 /* Listas */
 .lista-processo {
-  text-align: left;
-  padding-left: 20px;
-  counter-reset: list-item;
+  counter-reset: passo;
 }
 
 .lista-processo li {
@@ -186,9 +184,9 @@ nav ul li a.active {
   list-style-type: none;
 }
 
-.lista-processo li:before {
-  content: counter(list-item);
-  counter-increment: list-item;
+.lista-processo li::before {
+  content: counter(passo);
+  counter-increment: passo;
   color: #3498DB;
   font-weight: bold;
   margin-right: 10px;

@@ -9,11 +9,13 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
   color: #333;
+  background-color: #f9f9f9;
 }
 
 main {
   text-align: center;
   font-weight: bold;
+  padding: 40px 15px;
 }
 
 .container {
@@ -252,4 +254,38 @@ footer {
   nav ul li {
     margin: 5px;
   }
+}
+
+/* --- NOVO: botão toggle de cor sem script --- */
+
+/* Esconde o checkbox */
+.toggle-cor {
+  display: none;
+}
+
+/* Estilo do label que funciona como botão */
+.toggle-label {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #219653;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  user-select: none;
+  font-size: 1.1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  margin-top: 40px;
+}
+
+/* Hover do botão */
+.toggle-label:hover {
+  background-color: #1a7a48;
+}
+
+/* Quando o checkbox estiver marcado, muda o estilo do label */
+.toggle-cor:checked + .toggle-label {
+  background-color: #333;
+  color: #fff;
+  box-shadow: 0 0 10px #219653;
 }
