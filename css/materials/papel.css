@@ -326,14 +326,14 @@ ol li::marker {
 }
 
 .btn-azul {
-  background-color: #3498DB !important;
+  background-color: #5dade2 !important;
   padding: 12px 30px !important;
   font-size: 1rem !important;
   margin-top: 20px;
 }
 
 .btn-azul:hover {
-  background-color: #2980B9 !important;
+  background-color: #21618C !important;
   color: white !important;
 }
 

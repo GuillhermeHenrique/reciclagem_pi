@@ -164,7 +164,7 @@ nav ul li a.active {
 
 .icon {
   font-size: 2rem;
-  color: #3498DB;
+  color: #F1C40F;
   margin-bottom: 15px;
 }
 
@@ -184,10 +184,17 @@ nav ul li a.active {
   list-style-type: none;
 }
 
+<<<<<<< HEAD
 .lista-processo li::before {
   content: counter(passo);
   counter-increment: passo;
   color: #3498DB;
+=======
+.lista-processo li:before {
+  content: counter(list-item);
+  counter-increment: list-item;
+  color: #F1C40F;
+>>>>>>> 7e8bb74f9aadb1922f2f744058a4a837d19e2ab6
   font-weight: bold;
   margin-right: 10px;
 }
@@ -210,7 +217,7 @@ nav ul li a.active {
   top: 8px;
   width: 15px;
   height: 2px;
-  background-color: #3498DB;
+  background-color: #F1C40F;
 }
 
 /* Seção de Dicas */
@@ -252,7 +259,7 @@ nav ul li a.active {
 }
 
 .dica-item h3 {
-  color: #3498DB;
+  color: #F1C40F;
   margin: 15px 20px 10px;
 }
 
@@ -264,8 +271,8 @@ nav ul li a.active {
 
 /* Curiosidades */
 .card-curiosidade {
-  background-color: #3498DB;
-  color: white;
+  background-color: #F1C40F;
+  color: #333;
   padding: 40px;
   border-radius: 8px;
   text-align: center;
@@ -298,31 +305,31 @@ nav ul li a.active {
   list-style: none;
 }
 
-/* Botão Azul */
+/* Botão Amarelo */
 .btn {
   display: inline-block;
   padding: 8px 12px;
-  background-color: #3498DB;
-  color: white;
+  background-color: #F1C40F;
+  color: #333;
   border-radius: 4px;
   text-align: center;
   font-weight: bold;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.btn-azul {
-  background-color: #3498DB !important;
+.btn-amarelo {
+  background-color: #F3CC32 !important;
   padding: 12px 30px !important;
   font-size: 1rem !important;
   margin-top: 20px;
 }
 
-.btn-azul:hover {
-  background-color: #2980B9 !important;
-  color: white !important;
+.btn-amarelo:hover {
+  background-color: #D4AC0D !important;
+  color: #333 !important;
 }
 
-.btn-azul i {
+.btn-amarelo i {
   margin-right: 8px;
 }
 
