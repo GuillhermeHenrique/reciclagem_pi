@@ -254,21 +254,21 @@ footer {
 
 /*
 /* Responsividade */
-@media (max-width: 768px) {
-  nav ul {
-    gap: 15px;
-  }
+//@media (max-width: 768px) {
+  //nav ul {
+    //gap: 15px;
+  //}
 
-  .conteudo-principal {
+  //.conteudo-principal {
     margin: 30px 10px 60px;
-  }
+  //}
 
-  .professor, .alunos, .objetivo, .agradecimentos {
-    max-width: 100%;
-    padding: 0 15px;
-    text-align: center;
-  }
-}
+  //.professor, .alunos, .objetivo, .agradecimentos {
+    //max-width: 100%;
+   // padding: 0 15px;
+    //text-align: center;
+  //}
+//}
 
 */
 
