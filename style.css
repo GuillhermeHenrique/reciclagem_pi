@@ -194,11 +194,19 @@ th {
   background-color: #212121;
 }
 
-/* Garantir texto branco em todos os hovers, exceto amarelo */
-tr:not(.amarelo) .btn:hover {
-  color: white;
+.branco .btn:hover {
+  background-color: #FFF8F0;
+  color: #333;
 }
 
+.roxo .btn:hover {
+  background-color: #800080;
+}
+
+/* Garantir texto branco em todos os hovers, exceto amarelo */
+tr:not(.amarelo, .branco) .btn:hover {
+  color: white;
+}
 
 tr.azul>td:first-child {
   background: #3498DB;
@@ -237,6 +245,16 @@ tr.laranja>td:first-child {
 
 tr.preto>td:first-child {
   background: #212121;
+  color: white;
+}
+
+tr.branco>td:first-child {
+  background: #FFF8F0;
+  color: #333;
+}
+
+tr.roxo>td:first-child {
+  background: #800080;
   color: white;
 }
 
