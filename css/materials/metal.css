@@ -302,7 +302,7 @@ nav ul li a.active {
 .btn {
   display: inline-block;
   padding: 8px 12px;
-  background-color: #F1C40F;
+  background-color: #F3CC32;
   color: #333;
   border-radius: 4px;
   text-align: center;
@@ -318,7 +318,7 @@ nav ul li a.active {
 }
 
 .btn-amarelo:hover {
-  background-color: #D4AC0D !important;
+  background-color: #D9B00E !important;
   color: #333 !important;
 }
 
