@@ -184,17 +184,10 @@ nav ul li a.active {
   list-style-type: none;
 }
 
-<<<<<<< HEAD
-.lista-processo li::before {
-  content: counter(passo);
-  counter-increment: passo;
-  color: #3498DB;
-=======
 .lista-processo li:before {
   content: counter(list-item);
   counter-increment: list-item;
   color: #212121;
->>>>>>> 7e8bb74f9aadb1922f2f744058a4a837d19e2ab6
   font-weight: bold;
   margin-right: 10px;
 }
