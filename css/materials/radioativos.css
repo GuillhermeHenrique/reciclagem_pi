@@ -68,9 +68,9 @@ nav ul li a {
 
 nav ul li a:hover,
 nav ul li a.active {
-    background-color: #800080;
-    color: white;
-    text-decoration: none;
+  background-color: #219653;
+  color: white;
+  text-decoration: none;
 }
 
 /* Destaque */
