@@ -252,25 +252,7 @@ footer {
   transform: scale(1.1);
 }
 
-/*
-/* Responsividade */
-//@media (max-width: 768px) {
-  //nav ul {
-    //gap: 15px;
-  //}
 
-  //.conteudo-principal {
-    margin: 30px 10px 60px;
-  //}
-
-  //.professor, .alunos, .objetivo, .agradecimentos {
-    //max-width: 100%;
-   // padding: 0 15px;
-    //text-align: center;
-  //}
-//}
-
-*/
 
 /* Responsividade - Adaptada */
 @media (max-width: 768px) {
