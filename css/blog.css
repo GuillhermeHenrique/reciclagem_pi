@@ -1,0 +1,348 @@
+/* Base - Mantido igual ao primeiro CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Cabeçalho - Mantido igual */
+header {
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.cabecalho {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.logo-img {
+  height: 40px;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  padding: 5px 10px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  background-color: #219653;
+  color: white;
+  text-decoration: none;
+}
+
+/* Novo Estilo do Blog - Adaptado para o layout com destaque */
+.blog-page {
+  padding: 40px 0;
+}
+
+/* Artigo em Destaque */
+.artigo-destaque {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 60px;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.imagem-destaque {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
+.imagem-destaque img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.artigo-destaque:hover .imagem-destaque img {
+  transform: scale(1.03);
+}
+
+.conteudo-destaque {
+  padding: 30px;
+}
+
+.categoria {
+  display: inline-block;
+  background-color: #219653;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.artigo-destaque h1 {
+  color: #2C3E50;
+  font-size: 2rem;
+  margin-bottom: 15px;
+  line-height: 1.3;
+}
+
+.meta {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+}
+
+.texto-destaque p {
+  color: #333;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #219653;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #1a7a48;
+}
+
+/* Seção de Recomendações (substitui posts-grid) */
+.recomendacoes {
+  margin-top: 60px;
+}
+
+.recomendacoes h2 {
+  color: #2C3E50;
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.grid-recomendacoes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.card-recomendacao {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-recomendacao:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.imagem-recomendacao {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.imagem-recomendacao img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.card-recomendacao:hover .imagem-recomendacao img {
+  transform: scale(1.05);
+}
+
+.conteudo-recomendacao {
+  padding: 20px;
+}
+
+.conteudo-recomendacao .categoria {
+  background-color: #2C3E50;
+  margin-bottom: 10px;
+}
+
+.conteudo-recomendacao h3 {
+  color: #333;
+  font-size: 1.2rem;
+  margin: 10px 0;
+  line-height: 1.4;
+}
+
+.conteudo-recomendacao .meta {
+  color: #666;
+  font-size: 0.8rem;
+  margin: 0;
+}
+
+/* Rodapé - Mantido igual */
+footer {
+  background-color: #2C3E50;
+  color: white;
+  padding: 40px 0;
+  margin-top: 100px;
+}
+
+.conteudo-rodape {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo-rodape,
+.contato-info {
+  margin-bottom: 20px;
+}
+
+.contato-info {
+  margin-top: 65px;
+}
+
+.rodape-logo-img {
+  height: 50px;
+  margin-bottom: 15px;
+}
+
+.redes-sociais-icon {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.redes-sociais-icon a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+
+.redes-sociais-icon a i {
+  color: white;
+}
+
+.redes-sociais-icon a:hover:nth-child(1) {
+  background-color: #E1306C;
+}
+
+.redes-sociais-icon a:hover:nth-child(2) {
+  background-color: #1877F2;
+}
+
+.redes-sociais-icon a:hover:nth-child(3) {
+  background-color: #0A66C2;
+}
+
+.redes-sociais-icon a:hover:nth-child(4) {
+  background-color: #1DA1F2;
+}
+
+/* Responsividade - Adaptada */
+@media (max-width: 768px) {
+  .cabecalho {
+    flex-direction: column;
+  }
+
+  nav ul {
+    margin-top: 15px;
+  }
+
+  nav ul li {
+    margin: 0 10px;
+  }
+
+  .conteudo-rodape {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .contato-info {
+    margin-top: 30px;
+  }
+
+  .artigo-destaque h1 {
+    font-size: 1.6rem;
+  }
+  
+  .imagem-destaque {
+    height: 300px;
+  }
+  
+  .recomendacoes h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  nav ul li {
+    margin: 5px;
+  }
+
+  .imagem-destaque {
+    height: 200px;
+  }
+  
+  .conteudo-destaque {
+    padding: 20px;
+  }
+  
+  .grid-recomendacoes {
+    grid-template-columns: 1fr;
+  }
+}

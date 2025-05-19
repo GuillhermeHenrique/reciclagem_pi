@@ -1,0 +1,428 @@
+/* Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+main{
+  text-align: center;
+  font-weight: bold;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Cabeçalho */
+header {
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.cabecalho {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.logo-img {
+  height: 40px;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  padding: 5px 10px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  background-color: #219653;
+  color: white;
+  text-decoration: none;
+}
+
+/* Destaque */
+.destaque {
+  height: 400px;
+  position: relative;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.destaque-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.sobreposicao {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.conteudo-destaque {
+  position: relative;
+  z-index: 2;
+  padding: 20px;
+}
+
+/* Tipos de Resíduos */
+.tipos-residuos {
+  padding: 60px 0;
+}
+
+.tipos-residuos h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.tabela {
+  overflow-x: auto;
+}
+
+/* Tabela */
+table {
+  width: 100%;
+  border: 2px solid #ddd;
+  border-collapse: collapse;
+  margin: 25px 0;
+}
+
+th,
+td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #ccc;
+}
+
+th {
+  background: #2C3E50;
+  font-weight: 700;
+  border-bottom: 2px solid #999;
+  color: white;
+}
+
+/* Estilo base do botão */
+.btn {
+  display: inline-block;
+  padding: 8px 12px;
+  background-color: #949494;
+  color: white;
+  border-radius: 4px;
+  text-align: center;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Cores específicas para cada tipo de resíduo */
+.azul .btn:hover {
+  background-color: #3498DB;
+}
+
+.vermelho .btn:hover {
+  background-color: #E73C3C;
+}
+
+.verde .btn:hover {
+  background-color: #2ECC71;
+}
+
+.amarelo .btn:hover {
+  background-color: #F1C40F;
+  color: #333;
+}
+
+.marrom .btn:hover {
+  background-color: #8B4513;
+}
+
+.cinza .btn:hover {
+  background-color: #95A5A6;
+}
+
+.laranja .btn:hover {
+  background-color: #e67e22;
+}
+
+.preto .btn:hover {
+  background-color: #212121;
+}
+
+.branco .btn:hover {
+  background-color: #FFF8F0;
+  color: #333;
+}
+
+.roxo .btn:hover {
+  background-color: #800080;
+}
+
+/* Garantir texto branco em todos os hovers, exceto amarelo */
+tr:not(.amarelo, .branco) .btn:hover {
+  color: white;
+}
+
+tr.azul>td:first-child {
+  background: #3498DB;
+  color: white;
+}
+
+tr.vermelho>td:first-child {
+  background: #E73C3C;
+  color: white;
+}
+
+tr.verde>td:first-child {
+  background: #2ECC71;
+  color: white;
+}
+
+tr.amarelo>td:first-child {
+  background: #F1C40F;
+  color: #333;
+}
+
+tr.marrom>td:first-child {
+  background: #8B4513;
+  color: white;
+}
+
+tr.cinza>td:first-child {
+  background: #95A5A6;
+  color: white;
+}
+
+tr.laranja>td:first-child {
+  background: #e67e22;
+  color: white;
+}
+
+tr.preto>td:first-child {
+  background: #212121;
+  color: white;
+}
+
+tr.branco>td:first-child {
+  background: #FFF8F0;
+  color: #333;
+}
+
+tr.roxo>td:first-child {
+  background: #800080;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+/* Seção de Benefícios */
+.beneficios {
+  padding: 60px 0;
+}
+
+.beneficios h3 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.grade-beneficios {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.cartao-beneficio {
+  background-color: #ffffff;
+  padding: 30px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.cartao-beneficio:hover {
+  transform: translateY(-5px);
+}
+
+.icon {
+  font-size: 2rem;
+  color: #1a73e8;
+  margin-bottom: 15px;
+}
+
+.cartao-beneficio h4 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Rodapé */
+footer {
+  background-color: #2C3E50;
+  color: white;
+  padding: 40px 0;
+  margin-top: 150px;
+  
+}
+
+.conteudo-rodape {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo-rodape,
+.contato-info {
+  margin-bottom: 20px;
+}
+
+.contato-info{
+  margin-top: 65px;
+}
+
+.rodape-logo-img {
+  height: 50px;
+  margin-bottom: 15px;
+}
+
+.redes-sociais-icon {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.redes-sociais-icon a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+
+.redes-sociais-icon a i {
+  color: white;
+}
+
+.redes-sociais-icon a:hover:nth-child(1) {
+  background-color: #E1306C;
+  text-decoration: none;
+}
+
+.redes-sociais-icon a:hover:nth-child(2) {
+  background-color: #1877F2;
+  text-decoration: none;
+}
+
+.redes-sociais-icon a:hover:nth-child(3) {
+  background-color: #0A66C2;
+  text-decoration: none;
+}
+
+.redes-sociais-icon a:hover:nth-child(4) {
+  background-color: #1DA1F2;
+  text-decoration: none;
+}
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .cabecalho {
+    flex-direction: column;
+  }
+
+  nav ul {
+    margin-top: 15px;
+  }
+
+  nav ul li {
+    margin: 0 10px;
+  }
+
+  .destaque {
+    height: 300px;
+  }
+
+  .destaque h1 {
+    font-size: 2rem;
+  }
+
+  .destaque p {
+    font-size: 1.2rem;
+  }
+
+  .conteudo-rodape {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  nav ul li {
+    margin: 5px;
+  }
+
+  nav ul li a{
+    text-decoration: none;
+  }
+
+  .grade-beneficios {
+    grid-template-columns: 1fr;
+  }
+}
