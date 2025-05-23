@@ -185,8 +185,8 @@ nav ul li a.active {
 }
 
 .lista-processo li:before {
-  content: counter(list-item);
-  counter-increment: list-item;
+  content: counter(passo);
+  counter-increment: passo;
   color: #8B4513;
   font-weight: bold;
   margin-right: 10px;
