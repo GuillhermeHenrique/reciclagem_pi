@@ -80,7 +80,7 @@ nav ul li a.active {
   padding: 0 20px;
   background-color: #fff;
   border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
   text-align: center;
   padding-bottom: 40px;
 }
@@ -109,7 +109,10 @@ nav ul li a.active {
   font-weight: 500;
 }
 
-.professor, .alunos, .objetivo, .agradecimentos {
+.professor,
+.alunos,
+.objetivo,
+.agradecimentos {
   margin-bottom: 40px;
   text-align: left;
   max-width: 600px;
@@ -117,7 +120,10 @@ nav ul li a.active {
   margin-right: auto;
 }
 
-.professor h3, .alunos h3, .objetivo h3, .agradecimentos h3 {
+.professor h3,
+.alunos h3,
+.objetivo h3,
+.agradecimentos h3 {
   color: #27ae60;
   font-size: 1.8rem;
   margin-bottom: 15px;
@@ -125,7 +131,8 @@ nav ul li a.active {
   padding-left: 10px;
 }
 
-.professor p, .agradecimentos p {
+.professor p,
+.agradecimentos p {
   font-size: 1.1rem;
   color: #34495e;
   line-height: 1.4;
@@ -313,5 +320,3 @@ footer {
     grid-template-columns: 1fr;
   }
 }
-
-
