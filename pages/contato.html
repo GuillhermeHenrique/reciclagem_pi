@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="/css/contato.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="shortcut icon" href="/images/favicon/raciclagem-favicon.png" type="image/x-icon">
+  <script src="./js/contato.js"></script>
 </head>
 
 <body>
@@ -28,22 +29,44 @@
       </nav>
     </div>
   </header>
-
+  <div id="mensagem-envio" class="mensagem-sucesso" style="display: none; margin-top: 10px; color: green;">
+    Mensagem enviada com sucesso! Em breve entraremos em contato.
+  </div>
   <!-- Formulário -->
   <section class="contato-form">
     <div class="container">
       <h2>Contato</h2>
       <form class="formulario-contato">
         <div class="grupo-form">
+          <label for="txtnome">Nome</label>
+          <input type="text" id="txtnome" placeholder="Seu nome completo">
+        </div>
+
+        <div class="grupo-form">
           <label for="txtemail">Endereço de email</label>
           <input type="email" id="txtemail" placeholder="Seu email">
           <small class="texto-ajuda">Nunca vamos compartilhar seu email.</small>
         </div>
-        <div class="equipe">
-          <h3>Emails da equipe</h3>
+
+        <div class="grupo-form">
+          <label for="txtassunto">Assunto</label>
+          <input type="text" id="txtassunto" placeholder="Ex: Dúvidas, Sugestões, Reclamações">
         </div>
+
+        <div class="grupo-form">
+          <label for="txtmensagem">Mensagem</label>
+          <textarea id="txtmensagem" rows="5" placeholder="Digite sua mensagem aqui..."></textarea>
+        </div>
+
         <button type="submit" class="botao-enviar">Enviar</button>
+        
+        
       </form>
+
+      <!-- Mapa -->
+      <div class="mapa">
+        <h3>Nosso Endereço</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1835.1599448616762!2d-47.203156942609354!3d-23.085382897288405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8b4b183d3173b%3A0xe4e10e5dd84bd49e!2sFatec%20Indaiatuba%20-%20Faculdade%20de%20Tecnologia%20de%20Indaiatuba%20Dr.%20Archimedes%20Lammoglia!5e0!3m2!1spt-BR!2sbr!4v1748347581892!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>      </div>
     </div>
   </section>
 
@@ -69,7 +92,8 @@
     </div>
   </footer>
 
-  <script src="/js/script.js"></script>
+  
+
 </body>
 
 </html>

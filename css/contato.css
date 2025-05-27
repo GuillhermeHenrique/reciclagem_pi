@@ -1,5 +1,5 @@
-/* Base */
-* {
+ /* Base */
+ * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -72,7 +72,6 @@ nav ul li a:hover,
 nav ul li a.active {
   background-color: #219653;
   color: white;
-  text-decoration: none;
 }
 
 /* Estilo da seção de contato */
@@ -87,7 +86,7 @@ nav ul li a.active {
   font-size: 2rem;
 }
 
-/* Estilos do formulário personalizado */
+/* Formulário */
 .formulario-contato {
   max-width: 600px;
   margin: 0 auto;
@@ -95,10 +94,9 @@ nav ul li a.active {
   background: #fff;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.grupo-form {
-  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .grupo-form label {
@@ -108,16 +106,18 @@ nav ul li a.active {
   color: #333;
 }
 
-.grupo-form input {
+.grupo-form input,
+.grupo-form textarea {
   width: 100%;
   padding: 10px 15px;
   font-size: 1rem;
   border: 1px solid #ddd;
   border-radius: 4px;
-  transition: border-color 0.3s ease;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-.grupo-form input:focus {
+.grupo-form input:focus,
+.grupo-form textarea:focus {
   outline: none;
   border-color: #219653;
   box-shadow: 0 0 0 2px rgba(33, 150, 83, 0.2);
@@ -125,18 +125,12 @@ nav ul li a.active {
 
 .texto-ajuda {
   display: block;
-  margin-top: 8px;
+  margin-top: 4px;
   color: #6c757d;
   font-size: 0.875rem;
 }
 
-.equipe h3 {
-  margin: 20px 0;
-  color: #333;
-  text-align: center;
-  font-size: 1.5rem;
-}
-
+/* Botão de envio */
 .botao-enviar {
   background-color: #219653;
   color: white;
@@ -154,12 +148,52 @@ nav ul li a.active {
   background-color: #1a7a48;
 }
 
+/* Mensagem de sucesso */
+.mensagem-sucesso {
+  display: none; /* fica escondida até mostrar via JS */
+  font-size: 1rem; /* tamanho um pouco maior para melhor leitura */
+  color: #155724; /* verde escuro, mais fácil para os olhos */
+  background-color: #d4edda; /* fundo verde claro suave para destacar */
+  border: 1px solid #c3e6cb; /* borda verde clara para dar contorno */
+  padding: 12px 20px; /* espaço interno confortável */
+  border-radius: 5px; /* cantos arredondados para visual mais moderno */
+  text-align: center; /* centraliza o texto */
+  margin-top: 15px; /* espaço acima */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* sombra leve para destacar */
+  font-weight: 600; /* texto mais negrito para chamar atenção */
+  max-width: 400px; /* largura máxima para não ficar muito largo */
+  margin-left: auto; /* centraliza horizontalmente */
+  margin-right: auto;
+}
+
+
+
+
+
+/* Mapa */
+.mapa {
+  margin: 30px 0;
+}
+
+.mapa h3 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.mapa iframe {
+  width: 100%;
+  height: 300px;
+  border: 0;
+  border-radius: 6px;
+}
+
+
 /* Rodapé */
 footer {
   background-color: #2C3E50;
   color: white;
   padding: 40px 0;
-  margin-top: 150px;
+  margin-top: 60px;
 }
 
 .conteudo-rodape {
@@ -189,14 +223,13 @@ footer {
 }
 
 .redes-sociais-icon a {
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 40px;
   height: 40px;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   transition: background-color 0.3s ease;
 }
 
@@ -275,7 +308,7 @@ footer {
   font-size: 1.1rem;
   font-weight: bold;
   transition: background-color 0.3s ease;
-  margin-top: 40px;
+  margin: 40px auto;
 }
 
 /* Hover do botão */
