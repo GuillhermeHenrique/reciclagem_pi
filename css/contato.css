@@ -150,19 +150,19 @@ nav ul li a.active {
 
 /* Mensagem de sucesso */
 .mensagem-sucesso {
-  display: none; /* fica escondida até mostrar via JS */
-  font-size: 1rem; /* tamanho um pouco maior para melhor leitura */
-  color: #155724; /* verde escuro, mais fácil para os olhos */
-  background-color: #d4edda; /* fundo verde claro suave para destacar */
-  border: 1px solid #c3e6cb; /* borda verde clara para dar contorno */
-  padding: 12px 20px; /* espaço interno confortável */
-  border-radius: 5px; /* cantos arredondados para visual mais moderno */
-  text-align: center; /* centraliza o texto */
-  margin-top: 15px; /* espaço acima */
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* sombra leve para destacar */
-  font-weight: 600; /* texto mais negrito para chamar atenção */
-  max-width: 400px; /* largura máxima para não ficar muito largo */
-  margin-left: auto; /* centraliza horizontalmente */
+  display: none; 
+  font-size: 1rem; 
+  color: #155724; 
+  background-color: #d4edda; 
+  border: 1px solid #c3e6cb; 
+  padding: 12px 20px; 
+  border-radius: 5px; 
+  text-align: center; 
+  margin-top: 15px; 
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  font-weight: 600; 
+  max-width: 400px; 
+  margin-left: auto; 
   margin-right: auto;
 }
 
