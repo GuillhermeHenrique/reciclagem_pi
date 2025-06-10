@@ -23,23 +23,37 @@ document.addEventListener('DOMContentLoaded', function () {
   };
 
   const formulario = document.querySelector('.formulario-contato');
-  const botaoEnviar = document.querySelector('.botao-enviar'); 
+  const botaoEnviar = document.querySelector('.botao-enviar');
+
+  const selectAssunto = document.getElementById('txtassunto');
+  const outroAssuntoContainer = document.getElementById('outroAssuntoContainer');
+  const outroAssuntoInput = document.getElementById('outroAssuntoEspecifico');
+
+  if (selectAssunto) {
+    selectAssunto.addEventListener('change', function() {
+      if (selectAssunto.value === 'Outro') {
+        outroAssuntoContainer.style.display = 'block';
+        outroAssuntoInput.required = true;
+      } else {
+        outroAssuntoContainer.style.display = 'none';
+        outroAssuntoInput.required = false;
+        outroAssuntoInput.value = '';
+      }
+    });
+  }
 
   if (formulario) {
     formulario.addEventListener('submit', function (e) {
       e.preventDefault();
 
-      const formData = new FormData(formulario);
-      const nomeValor = document.getElementById('txtnome').value.trim();
-      const emailValor = document.getElementById('txtemail').value.trim();
-      const assuntoValor = document.getElementById('txtassunto').value.trim();
-      const mensagemValor = document.getElementById('txtmensagem').value.trim();
-
-      if (nomeValor === '' || emailValor === '' || assuntoValor === '' || mensagemValor === '') {
-        toast.error('Por favor, preencha todos os campos.');
+      if (!formulario.checkValidity()) {
+        toast.error('Por favor, preencha todos os campos obrigatórios.');
+        formulario.reportValidity(); 
         return; 
       }
 
+      const formData = new FormData(formulario);
+      
       botaoEnviar.disabled = true;
       botaoEnviar.innerText = 'Enviando...';
 
@@ -53,6 +67,9 @@ document.addEventListener('DOMContentLoaded', function () {
         if (response.ok) {
           toast.success('Mensagem enviada com sucesso!');
           formulario.reset();
+          if (outroAssuntoContainer) {
+              outroAssuntoContainer.style.display = 'none';
+          }
         } else {
           toast.error('Ocorreu um erro ao enviar a mensagem. Tente novamente.');
         }

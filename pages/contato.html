@@ -36,36 +36,47 @@
     <div class="container">
       <h2>Contato</h2>
       <!-- Formulario Adapatado para receber os envios no formspree -->
-      <form class="formulario-contato" action="https://formspree.io/f/xpwrpoaz" method="POST">
-        <div class="grupo-form">
-          <label for="txtnome">Nome</label>
-          <input type="text" id="txtnome" name="nome" placeholder="Seu nome completo">
-        </div>
-        <div class="grupo-form">
-          <label for="txtemail">Endereço de email</label>
-          <input type="email" id="txtemail" name="email" placeholder="Seu email">
-          <small class="texto-ajuda">Nunca vamos compartilhar seu email.</small>
-        </div>
-        <div class="grupo-form">
-          <label for="txtassunto">Assunto</label>
-          <select id="txtassunto" name="assunto" required>
-            <option value="" disabled selected>Selecione uma das opções...</option>
+      <form class="formulario-contato"
+      action="https://formspree.io/f/xpwrpoaz"
+      method="POST">
 
-            <option value="Dúvida">Dúvida</option>
-            <option value="Sugestão">Sugestão</option>
-            <option value="Reclamação">Reclamação</option>
-            <option value="Elogio">Elogio</option>
-            <option value="Outro">Outro Assunto</option>
-          </select>
-        </div>
-        <div class="grupo-form">
-          <label for="txtmensagem">Mensagem</label>
-          <textarea id="txtmensagem" name="mensagem" rows="5" placeholder="Digite sua mensagem aqui..."></textarea>
-        </div>
-        <button type="submit" class="botao-enviar">Enviar</button>
-        <div id="toast-notification"></div>
+  <div class="grupo-form">
+    <label for="txtnome">Nome</label>
+    <input type="text" id="txtnome" name="nome" placeholder="Seu nome completo" required>
+  </div>
 
-      </form>
+  <div class="grupo-form">
+    <label for="txtemail">Endereço de email</label>
+    <input type="email" id="txtemail" name="email" placeholder="Seu email" required>
+    <small class="texto-ajuda">Nunca vamos compartilhar seu email.</small>
+  </div>
+
+  <div class="grupo-form">
+    <label for="txtassunto">Assunto</label>
+    <select id="txtassunto" name="assunto" required>
+      <option value="" disabled selected>Selecione uma das opções...</option>
+      <option value="Dúvida">Dúvida</option>
+      <option value="Sugestão">Sugestão</option>
+      <option value="Reclamação">Reclamação</option>
+      <option value="Elogio">Elogio</option>
+      <option value="Outro">Outro Assunto</option>
+    </select>
+  </div>
+
+  <div class="grupo-form" id="outroAssuntoContainer" style="display: none;">
+    <label for="outroAssuntoEspecifico">Especifique o assunto</label>
+    <input type="text" id="outroAssuntoEspecifico" name="outro_assunto_especifico" placeholder="Digite o assunto aqui...">
+  </div>
+
+  <div class="grupo-form">
+    <label for="txtmensagem">Mensagem</label>
+    <textarea id="txtmensagem" name="mensagem" rows="5" placeholder="Digite sua mensagem aqui..." required></textarea>
+  </div>
+  
+  <button type="submit" class="botao-enviar">Enviar</button>
+  <div id="toast-notification"></div>
+
+</form>
 
       <!-- Mapa -->
       <div class="mapa">
