@@ -35,6 +35,7 @@
   <section class="contato-form">
     <div class="container">
       <h2>Contato</h2>
+      <!-- Formulario Adapatado para receber os envios no formspree -->
       <form class="formulario-contato" action="https://formspree.io/f/xpwrpoaz" method="POST">
         <div class="grupo-form">
           <label for="txtnome">Nome</label>
@@ -49,13 +50,11 @@
           <label for="txtassunto">Assunto</label>
           <select id="txtassunto" name="assunto" required>
             <option value="" disabled selected>Selecione uma das opções...</option>
-            
+
             <option value="Dúvida">Dúvida</option>
             <option value="Sugestão">Sugestão</option>
             <option value="Reclamação">Reclamação</option>
             <option value="Elogio">Elogio</option>
-            <option value="Parceria">Proposta de Parceria</option>
-            <option value="Imprensa">Contato de Imprensa</option>
             <option value="Outro">Outro Assunto</option>
           </select>
         </div>
