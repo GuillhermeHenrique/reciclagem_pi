@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Reciclagem</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../static/css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="shortcut icon" href="./images/favicon/raciclagem-favicon.png" type="image/x-icon">
 </head>
@@ -16,14 +16,15 @@
   <header>
     <div class="container cabecalho">
       <div class="logo">
-        <img src="images/plant-logo.png" alt="Logo Reciclagem" class="logo-img">
+        <img src="../static/images/plant-logo.png" alt="Logo Reciclagem" class="logo-img">
       </div>
       <nav>
         <ul>
-          <li><a href="index.html" class="active">Início</a></li>
-          <li><a href="pages/blog.html">Blog</a></li>
-          <li><a href="pages/contato.html">Contato</a></li>
-          <li><a href="pages/equipe.html">Equipe</a></li>
+          <li><a href="{{ url_for('index') }}" class="active">Início</a></li>
+          <li><a href="{{ url_for('blog') }}">Blog</a></li>
+          <li><a href="{{ url_for('contato') }}">Contato</a></li>
+          <li><a href="{{ url_for('equipe') }}">Equipe</a></li>
+          <li><a href="{{ url_for('mapa_de_coleta') }}">Mapa de Coleta</a></li>
         </ul>
       </nav>
     </div>
@@ -31,7 +32,7 @@
 
   <!-- Destaque -->
   <section class="destaque">
-    <img src="images/lixeiras-de-reciclagem.webp" alt="Lixeiras de reciclagem" class="destaque-img">
+    <img src="../static/images/lixeiras-de-reciclagem.webp" alt="Lixeiras de reciclagem" class="destaque-img">
     <div class="sobreposicao"></div>
     <div class="container conteudo-destaque">
       <h1>Cada atitude conta.</h1>
@@ -43,7 +44,7 @@
   <div class="anuncio-topo">
     <!-- código de anúncio -->
     <a href="https://fatecid.com.br/cursos/index.php" style="text-decoration: none; color: inherit;">
-      <img src="./images/Anuncio/41.jpg" style="max-width: 100%;">
+      <img src="../static/images/Anuncio/41.jpg" style="max-width: 100%;">
 
       <!-- <strong>🌱</strong> -->
     </a>
@@ -68,61 +69,61 @@
                 <td>Azul</td>
                 <td>Papel/Papelão</td>
                 <td>Jornais, revistas, caixas, papelão e embalagens de papel</td>
-                <td><a href="/pages/materials/papel.html" class="btn">Ver Mais</a></td>
+                <td><a href="../templates/pages/materials/papel.html" class="btn">Ver Mais</a></td>
               </tr>
               <tr class="vermelho">
                 <td>Vermelho</td>
                 <td>Plástico</td>
                 <td>Garrafas, embalagens, sacolas e recipientes plásticos</td>
-                <td><a href="/pages/materials/plastico.html" class="btn">Ver Mais</a></td>
+                <td><a href="../templates/pages/materials/plastico.html" class="btn">Ver Mais</a></td>
               </tr>
               <tr class="verde">
                 <td>Verde</td>
                 <td>Vidro</td>
                 <td>Garrafas, potes, frascos e outros recipientes de vidro</td>
-                <td><a href="/pages/materials/vidro.html" class="btn">Ver Mais</a></td>
+                <td><a href="../templates/pages/materials/vidro.html" class="btn">Ver Mais</a></td>
               </tr>
               <tr class="amarelo">
                 <td>Amarelo</td>
                 <td>Metal</td>
                 <td>Latas de alumínio, tampas e outros objetos de metal</td>
-                <td><a href="/pages/materials/metal.html" class="btn">Ver Mais</a></td>
+                <td><a href="../templates/pages/materials/metal.html" class="btn">Ver Mais</a></td>
               </tr>
               <tr class="marrom">
                 <td>Marrom</td>
                 <td>Orgânico</td>
                 <td>Restos de alimentos, cascas de frutas e resíduos de jardim</td>
-                <td><a href="/pages/materials/organico.html" class="btn">Ver Mais</a></td>
+                <td><a href="../templates/pages/materials/organico.html" class="btn">Ver Mais</a></td>
               </tr>
               <tr class="cinza">
                 <td>Cinza</td>
                 <td>Não reciclável</td>
                 <td>Itens que não podem ser reciclados ou compostados</td>
-                <td><a href="/pages/materials/naoReciclavel.html" class="btn">Ver Mais</a></td>
+                <td><a href="../templates/pages/materials/naoReciclavel.html" class="btn">Ver Mais</a></td>
               </tr>
               <tr class="laranja">
                 <td>Laranja</td>
                 <td>Perigosos</td>
                 <td>Pilhas, baterias, produtos químicos e outros materiais perigosos</td>
-                <td><a href="/pages/materials/perigosos.html" class="btn">Ver Mais</a></td>
+                <td><a href="../templates/pages/materials/perigosos.html" class="btn">Ver Mais</a></td>
               </tr>
               <tr class="preto">
                 <td>Preto</td>
                 <td>Madeira</td>
                 <td>Móveis, paletes e outros produtos de madeira</td>
-                <td><a href="/pages/materials/madeira.html" class="btn">Ver Mais</a></td>
+                <td><a href="../templates/pages/materials/madeira.html" class="btn">Ver Mais</a></td>
               </tr>
               <tr class="branco">
                 <td>Branco</td>
                 <td>Resíduos ambulatoriais e de saúde</td>
                 <td>Agulhas, seringas, gaze, luvas, medicamentos vencidos, materiais hospitalares</td>
-                <td><a href="/pages/materials/ambulatorios.html" class="btn">Ver Mais</a></td>
+                <td><a href="../templates/pages/materials/ambulatorios.html" class="btn">Ver Mais</a></td>
               </tr>
               <tr class="roxo">
                 <td>Roxo</td>
                 <td>Resíduos radioativos</td>
                 <td>Materiais contaminados com radiação, rejeitos de laboratórios nucleares</td>
-                <td><a href="/pages/materials/radioativos.html" class="btn">Ver Mais</a></td>
+                <td><a href="../templates/pages/materials/radioativos.html" class="btn">Ver Mais</a></td>
               </tr>
             </tbody>
           </table>
@@ -173,7 +174,7 @@
     <div class="container">
       <div class="conteudo-rodape">
         <div class="logo-rodape">
-          <img src="images/plant-logo.png" alt="Logo Reciclagem" class="rodape-logo-img">
+          <img src="../static/images/plant-logo.png" alt="Logo Reciclagem" class="rodape-logo-img">
           <h3>Siga-nos</h3>
           <div class="redes-sociais-icon">
             <a href="#"><i class="fab fa-instagram"></i></a>

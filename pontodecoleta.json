@@ -1,0 +1,26 @@
+[
+    {
+      "id": 1,
+      "nome": "Ecoponto Vila Madalena",
+      "lat": -23.5489,
+      "lon": -46.6999,
+      "materiais": "Plástico, Vidro, Papel, Metal",
+      "aprovado": true
+    },
+    {
+      "id": 2,
+      "nome": "Cooperativa de Reciclagem Pinheiros",
+      "lat": -23.5650,
+      "lon": -46.7032,
+      "materiais": "Papel, Metal",
+      "aprovado": true
+    },
+    {
+      "id": 3,
+      "nome": "Ponto de Coleta Provisório (sugestão de usuário)",
+      "lat": -23.5505,
+      "lon": -46.6333,
+      "materiais": "Vidro",
+      "aprovado": false
+    }
+  ]
