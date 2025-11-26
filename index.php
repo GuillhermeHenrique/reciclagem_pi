@@ -26,8 +26,8 @@ $pagina_atual = "home";
   </section>
 
   <div class="anuncio-topo">
-    <a href="https://fatecid.com.br/cursos/index.php" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit;">
-      <img src="./images/Anuncio/41.jpg" style="max-width: 100%;">
+    <a href="https://fatecid.com.br/cursos/index.php" target="_blank" style="text-decoration: none; color: inherit;">
+      <img src="./images/Anuncio/41.jpg" style="max-width: 100%;" alt="Vestibular Fatec">
     </a>
   </div>
 
