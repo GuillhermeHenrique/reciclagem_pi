@@ -1,3 +1,7 @@
+<?php
+$base_path = "../..";
+$pagina_atual = "materiais";
+?>
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -5,33 +9,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Madeira</title>
-  <link rel="stylesheet" href="/css/materials/madeira.css" />
+  <link rel="stylesheet" href="<?php echo $base_path; ?>/css/materials/madeira.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-  <link rel="shortcut icon" href="/images/favicon/raciclagem-favicon.png" type="image/x-icon">
-
+  <link rel="shortcut icon" href="<?php echo $base_path; ?>/images/favicon/raciclagem-favicon.png" type="image/x-icon">
 </head>
 
 <body>
-  <!-- Cabeçalho -->
-  <header>
-    <div class="container cabecalho">
-      <div class="logo">
-        <img src="/images/plant-logo.png" alt="Logo Reciclagem" class="logo-img" />
-      </div>
-      <nav>
-        <ul>
-          <li><a href="/index.html">Início</a></li>
-          <li><a href="/pages/blog.html">Blog</a></li>
-          <li><a href="/pages/contato.html">Contato</a></li>
-          <li><a href="/pages/equipe.html">Equipe</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+  <?php include '../../includes/header.php'; ?>
 
-  <!-- Destaque -->
   <section class="destaque">
-    <img src="/images/materials/madeira/banner_madeira.jpg" alt="Resíduos de madeira" class="destaque-img" />
+    <img src="<?php echo $base_path; ?>/images/materials/madeira/banner_madeira.jpg" alt="Resíduos de madeira" class="destaque-img" />
     <div class="sobreposicao"></div>
     <div class="container conteudo-destaque">
       <h1>Madeira</h1>
@@ -39,7 +26,6 @@
     </div>
   </section>
 
-  <!-- Conteúdo Principal -->
   <main class="container">
     <section class="tipos-residuos">
       <h2><i class="fas fa-tree"></i> Madeira Reciclável</h2>
@@ -49,7 +35,6 @@
       </p>
 
       <div class="grade-beneficios">
-        <!-- Card 1 -->
         <div class="cartao-beneficio">
           <div class="icon">
             <i class="fas fa-chair" style="color: #212121"></i>
@@ -64,7 +49,6 @@
           </ul>
         </div>
 
-        <!-- Card 2 -->
         <div class="cartao-beneficio">
           <div class="icon">
             <i class="fas fa-recycle" style="color: #212121"></i>
@@ -78,7 +62,6 @@
           </ul>
         </div>
 
-        <!-- Card 3 -->
         <div class="cartao-beneficio">
           <div class="icon">
             <i class="fas fa-warehouse" style="color: #212121"></i>
@@ -98,7 +81,7 @@
       <h2><i class="fas fa-lightbulb"></i> Dicas de Reutilização</h2>
       <div class="dicas-container">
         <div class="dica-item">
-          <img src="/images/materials/madeira/dica1_madeira.webp" alt="Móvel de madeira reciclada" />
+          <img src="<?php echo $base_path; ?>/images/materials/madeira/dica1_madeira.webp" alt="Móvel de madeira reciclada" />
           <h3>Crie Novos Móveis</h3>
           <p>
             Transforme peças antigas em bancos, mesas ou prateleiras. Um pouco de criatividade pode dar nova vida à
@@ -107,7 +90,7 @@
         </div>
 
         <div class="dica-item">
-          <img src="/images/materials/madeira/dica2_madeira.jpg" alt="Paletes reaproveitados" />
+          <img src="<?php echo $base_path; ?>/images/materials/madeira/dica2_madeira.jpg" alt="Paletes reaproveitados" />
           <h3>Use Paletes</h3>
           <p>
             Paletes de madeira são muito versáteis e podem virar sofás, camas ou cercas decorativas.
@@ -115,7 +98,7 @@
         </div>
 
         <div class="dica-item">
-          <img src="/images/materials/madeira/dica3_madeira.jpg" alt="Oficina de marcenaria" />
+          <img src="<?php echo $base_path; ?>/images/materials/madeira/dica3_madeira.jpg" alt="Oficina de marcenaria" />
           <h3>Doe para Oficinas</h3>
           <p>
             Muitas oficinas e escolas técnicas aceitam doações de madeira para treinar alunos e construir produtos
@@ -138,35 +121,15 @@
           <li>Redução da poluição do solo e da água</li>
           <li>Conservação da biodiversidade local</li>
         </ul>
-        <a href="/index.html" class="btn btn-preto"><i class="fas fa-arrow-left"></i> Voltar à Página Inicial</a>
+        <a href="<?php echo $base_path; ?>/index.php" class="btn btn-preto"><i class="fas fa-arrow-left"></i> Voltar à Página Inicial</a>
       </div>
     </section>
 
   </main>
 
-  <!-- Rodapé -->
-  <footer>
-    <div class="container">
-      <div class="conteudo-rodape">
-        <div class="logo-rodape">
-          <img src="/images/plant-logo.png" alt="Logo Reciclagem" class="rodape-logo-img" />
-          <h3>Siga-nos</h3>
-          <div class="redes-sociais-icon">
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-linkedin"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-          </div>
-        </div>
-        <div class="contato-info">
-          <h3>Contato</h3>
-          <p>contato@reciclagemsustentavel.com.br</p>
-        </div>
-      </div>
-    </div>
-  </footer>
+  <?php include '../../includes/footer.php'; ?>
 
-  <script src="../js/script.js"></script>
+  <script src="<?php echo $base_path; ?>/js/script.js"></script>
 </body>
 
 </html>

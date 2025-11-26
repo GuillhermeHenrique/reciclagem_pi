@@ -1,3 +1,7 @@
+<?php
+$base_path = "../..";
+$pagina_atual = "materiais";
+?>
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -5,33 +9,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Orgânico</title>
-  <link rel="stylesheet" href="/css/materials/organico.css" />
+  <link rel="stylesheet" href="<?php echo $base_path; ?>/css/materials/organico.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-  <link rel="shortcut icon" href="/images/favicon/raciclagem-favicon.png" type="image/x-icon">
-
+  <link rel="shortcut icon" href="<?php echo $base_path; ?>/images/favicon/raciclagem-favicon.png" type="image/x-icon">
 </head>
 
 <body>
-  <!-- Cabeçalho -->
-  <header>
-    <div class="container cabecalho">
-      <div class="logo">
-        <img src="/images/plant-logo.png" alt="Logo Reciclagem" class="logo-img" />
-      </div>
-      <nav>
-        <ul>
-          <li><a href="/index.html">Início</a></li>
-          <li><a href="/pages/blog.html">Blog</a></li>
-          <li><a href="/pages/contato.html">Contato</a></li>
-          <li><a href="/pages/equipe.html">Equipe</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+  <?php include '../../includes/header.php'; ?>
 
-  <!-- Destaque -->
   <section class="destaque">
-    <img src="/images/materials/organico/banner_organico.webp" alt="Reciclagem orgânica" class="destaque-img" />
+    <img src="<?php echo $base_path; ?>/images/materials/organico/banner_organico.webp" alt="Reciclagem orgânica" class="destaque-img" />
     <div class="sobreposicao"></div>
     <div class="container conteudo-destaque">
       <h1>Orgânico</h1>
@@ -39,7 +26,6 @@
     </div>
   </section>
 
-  <!-- Conteúdo Principal -->
   <main class="container">
     <section class="tipos-residuos">
       <h2><i class="fas fa-seedling"></i> Resíduos Orgânicos</h2>
@@ -49,7 +35,6 @@
       </p>
 
       <div class="grade-beneficios">
-        <!-- Card 1 -->
         <div class="cartao-beneficio">
           <div class="icon">
             <i class="fas fa-recycle" style="color: #8B4513"></i>
@@ -64,7 +49,6 @@
           </ol>
         </div>
 
-        <!-- Card 2 -->
         <div class="cartao-beneficio">
           <div class="icon">
             <i class="fas fa-check-circle" style="color: #8B4513"></i>
@@ -79,7 +63,6 @@
           </ul>
         </div>
 
-        <!-- Card 3 -->
         <div class="cartao-beneficio">
           <div class="icon">
             <i class="fas fa-times-circle" style="color: #8B4513"></i>
@@ -100,7 +83,7 @@
       <h2><i class="fas fa-leaf"></i> Dicas Práticas</h2>
       <div class="dicas-container">
         <div class="dica-item">
-          <img src="/images/materials/organico/dica1_organico.jpg" alt="Separando lixo orgânico" />
+          <img src="<?php echo $base_path; ?>/images/materials/organico/dica1_organico.jpg" alt="Separando lixo orgânico" />
           <h3>Separe o Lixo</h3>
           <p>
             Use um recipiente específico para os resíduos orgânicos, evitando a contaminação com materiais recicláveis.
@@ -108,7 +91,7 @@
         </div>
 
         <div class="dica-item">
-          <img src="/images/materials/organico/dica2_organico.webp" alt="Composteira doméstica" />
+          <img src="<?php echo $base_path; ?>/images/materials/organico/dica2_organico.webp" alt="Composteira doméstica" />
           <h3>Faça Compostagem</h3>
           <p>
             Monte uma composteira doméstica para transformar os resíduos em adubo e utilizar em hortas e jardins.
@@ -116,7 +99,7 @@
         </div>
 
         <div class="dica-item">
-          <img src="/images/materials/organico/dica3_organico.jpg" alt="Adubo orgânico" />
+          <img src="<?php echo $base_path; ?>/images/materials/organico/dica3_organico.jpg" alt="Adubo orgânico" />
           <h3>Adubo Natural</h3>
           <p>
             Utilize o adubo gerado na compostagem para enriquecer o solo de forma natural e sem produtos químicos.
@@ -138,34 +121,14 @@
           <li>Preservação da biodiversidade local</li>
           <li>Conservação dos recursos naturais e do solo fértil</li>
         </ul>
-        <a href="/index.html" class="btn btn-marrom"><i class="fas fa-arrow-left"></i> Voltar à Página Inicial</a>
+        <a href="<?php echo $base_path; ?>/index.php" class="btn btn-marrom"><i class="fas fa-arrow-left"></i> Voltar à Página Inicial</a>
       </div>
     </section>
   </main>
 
-  <!-- Rodapé -->
-  <footer>
-    <div class="container">
-      <div class="conteudo-rodape">
-        <div class="logo-rodape">
-          <img src="/images/plant-logo.png" alt="Logo Reciclagem" class="rodape-logo-img" />
-          <h3>Siga-nos</h3>
-          <div class="redes-sociais-icon">
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-linkedin"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-          </div>
-        </div>
-        <div class="contato-info">
-          <h3>Contato</h3>
-          <p>contato@reciclagemsustentavel.com.br</p>
-        </div>
-      </div>
-    </div>
-  </footer>
+  <?php include '../../includes/footer.php'; ?>
 
-  <script src="../js/script.js"></script>
+  <script src="<?php echo $base_path; ?>/js/script.js"></script>
 </body>
 
 </html>

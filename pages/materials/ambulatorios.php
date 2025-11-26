@@ -1,3 +1,7 @@
+<?php
+$base_path = "../..";
+$pagina_atual = "materiais";
+?>
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -5,32 +9,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resíduos de Saúde</title>
-    <link rel="stylesheet" href="/css/materials/saude.css">
+    <link rel="stylesheet" href="<?php echo $base_path; ?>/css/materials/saude.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="shortcut icon" href="/images/favicon/raciclagem-favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="<?php echo $base_path; ?>/images/favicon/raciclagem-favicon.png" type="image/x-icon">
 </head>
 
 <body>
-    <!-- Cabeçalho -->
-    <header>
-        <div class="container cabecalho">
-            <div class="logo">
-                <img src="/images/plant-logo.png" alt="Logo Reciclagem" class="logo-img">
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="/index.html">Início</a></li>
-                    <li><a href="/pages/blog.html">Blog</a></li>
-                    <li><a href="/pages/contato.html">Contato</a></li>
-                    <li><a href="/pages/equipe.html">Equipe</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+    <?php include '../../includes/header.php'; ?>
 
-    <!-- Destaque -->
     <section class="destaque">
-        <img src="/images/materials/ambulatorios/residuos-ambulatoriais-saude.jpg" alt="Resíduos de Saúde" class="destaque-img">
+        <img src="<?php echo $base_path; ?>/images/materials/ambulatorios/residuos-ambulatoriais-saude.jpg" alt="Resíduos de Saúde" class="destaque-img">
         <div class="sobreposicao"></div>
         <div class="container conteudo-destaque">
             <h1>Resíduos Ambulatoriais e de Saúde</h1>
@@ -38,7 +26,6 @@
         </div>
     </section>
 
-    <!-- Conteúdo Principal -->
     <main class="container">
         <section class="tipos-residuos">
             <h2><i class="fas fa-syringe"></i> Manejo de Resíduos de Saúde</h2>
@@ -48,7 +35,6 @@
             </p>
 
             <div class="grade-beneficios">
-                <!-- Card 1 -->
                 <div class="cartao-beneficio">
                     <div class="icon">
                         <i class="fas fa-recycle" style="color: #a0a0a0"></i>
@@ -63,7 +49,6 @@
                     </ol>
                 </div>
 
-                <!-- Card 2 -->
                 <div class="cartao-beneficio">
                     <div class="icon">
                         <i class="fas fa-check-circle" style="color: #a0a0a0"></i>
@@ -79,7 +64,6 @@
                     </ul>
                 </div>
 
-                <!-- Card 3 -->
                 <div class="cartao-beneficio">
                     <div class="icon">
                         <i class="fas fa-times-circle" style="color: #a0a0a0"></i>
@@ -100,7 +84,7 @@
             <h2><i class="fas fa-shield-alt"></i> Dicas de Segurança</h2>
             <div class="dicas-container">
                 <div class="dica-item">
-                    <img src="/images/materials/ambulatorios/segregacao.jpg" alt="Segregação">
+                    <img src="<?php echo $base_path; ?>/images/materials/ambulatorios/segregacao.jpg" alt="Segregação">
                     <h3>Segregação</h3>
                     <p>
                         Separe imediatamente os resíduos conforme sua classificação (perfurocortantes, químicos,
@@ -109,7 +93,7 @@
                 </div>
 
                 <div class="dica-item">
-                    <img src="/images/materials/ambulatorios/recipientes.jpg" alt="Acondicionamento">
+                    <img src="<?php echo $base_path; ?>/images/materials/ambulatorios/recipientes.jpg" alt="Acondicionamento">
                     <h3>Acondicionamento</h3>
                     <p>
                         Use recipientes rígidos para perfurocortantes e sacos brancos resistentes para outros materiais.
@@ -117,7 +101,7 @@
                 </div>
 
                 <div class="dica-item">
-                    <img src="/images/materials/ambulatorios/coleta-de-residuos-hospitalares.jpg" alt="Transporte">
+                    <img src="<?php echo $base_path; ?>/images/materials/ambulatorios/coleta-de-residuos-hospitalares.jpg" alt="Transporte">
                     <h3>Transporte</h3>
                     <p>
                         Armazene temporariamente em local ventilado e sinalizado até a coleta por empresa autorizada.
@@ -139,35 +123,15 @@
                     <li>Multas por descarte irregular</li>
                     <li>Necessidade de plano de gerenciamento</li>
                 </ul>
-                <a href="/index.html" class="btn btn-branco"><i class="fas fa-arrow-left"></i> Voltar à Página
+                <a href="<?php echo $base_path; ?>/index.php" class="btn btn-branco"><i class="fas fa-arrow-left"></i> Voltar à Página
                     Inicial</a>
             </div>
         </section>
     </main>
 
-    <!-- Rodapé -->
-    <footer>
-        <div class="container">
-            <div class="conteudo-rodape">
-                <div class="logo-rodape">
-                    <img src="/images/plant-logo.png" alt="Logo Reciclagem" class="rodape-logo-img">
-                    <h3>Siga-nos</h3>
-                    <div class="redes-sociais-icon">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                    </div>
-                </div>
-                <div class="contato-info">
-                    <h3>Contato</h3>
-                    <p>contato@reciclagemsustentavel.com.br</p>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <?php include '../../includes/footer.php'; ?>
 
-    <script src="../js/script.js"></script>
+    <script src="<?php echo $base_path; ?>/js/script.js"></script>
 </body>
 
 </html>

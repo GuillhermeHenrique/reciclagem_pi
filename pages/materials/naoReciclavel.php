@@ -1,3 +1,7 @@
+<?php
+$base_path = "../..";
+$pagina_atual = "materiais";
+?>
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -5,33 +9,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Não Reciclável</title>
-  <link rel="stylesheet" href="/css/materials/naoReciclavel.css" />
+  <link rel="stylesheet" href="<?php echo $base_path; ?>/css/materials/naoReciclavel.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-  <link rel="shortcut icon" href="/images/favicon/raciclagem-favicon.png" type="image/x-icon">
-
+  <link rel="shortcut icon" href="<?php echo $base_path; ?>/images/favicon/raciclagem-favicon.png" type="image/x-icon">
 </head>
 
 <body>
-  <!-- Cabeçalho -->
-  <header>
-    <div class="container cabecalho">
-      <div class="logo">
-        <img src="/images/plant-logo.png" alt="Logo Reciclagem" class="logo-img" />
-      </div>
-      <nav>
-        <ul>
-          <li><a href="/index.html">Início</a></li>
-          <li><a href="/pages/blog.html">Blog</a></li>
-          <li><a href="/contato.html">Contato</a></li>
-          <li><a href="/equipe.html">Equipe</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+  <?php include '../../includes/header.php'; ?>
 
-  <!-- Destaque -->
   <section class="destaque">
-    <img src="/images/materials/naoReciclaveis/banner_naoReciclaveis.jpg" alt="Lixo não reciclável" class="destaque-img" />
+    <img src="<?php echo $base_path; ?>/images/materials/naoReciclaveis/banner_naoReciclaveis.jpg" alt="Lixo não reciclável" class="destaque-img" />
     <div class="sobreposicao"></div>
     <div class="container conteudo-destaque">
       <h1>Não Reciclável</h1>
@@ -39,7 +26,6 @@
     </div>
   </section>
 
-  <!-- Conteúdo Principal -->
   <main class="container">
     <section class="tipos-residuos">
       <h2><i class="fas fa-trash-alt"></i> Resíduos Não Recicláveis</h2>
@@ -49,7 +35,6 @@
       </p>
 
       <div class="grade-beneficios">
-        <!-- Card 1 -->
         <div class="cartao-beneficio">
           <div class="icon">
             <i class="fas fa-ban" style="color: #95A5A6"></i>
@@ -64,7 +49,6 @@
           </ul>
         </div>
 
-        <!-- Card 2 -->
         <div class="cartao-beneficio">
           <div class="icon">
             <i class="fas fa-exclamation-circle" style="color: #95A5A6"></i>
@@ -78,7 +62,6 @@
           </ul>
         </div>
 
-        <!-- Card 3 -->
         <div class="cartao-beneficio">
           <div class="icon">
             <i class="fas fa-dumpster" style="color: #95A5A6"></i>
@@ -98,7 +81,7 @@
       <h2><i class="fas fa-info-circle"></i> Dicas Importantes</h2>
       <div class="dicas-container">
         <div class="dica-item">
-          <img src="/images/materials/naoReciclaveis/dica1_naoReciclaveis.jpg" alt="Separando lixo" />
+          <img src="<?php echo $base_path; ?>/images/materials/naoReciclaveis/dica1_naoReciclaveis.jpg" alt="Separando lixo" />
           <h3>Separe o Lixo</h3>
           <p>
             Nunca misture resíduos recicláveis com materiais contaminados ou que não podem ser reciclados.
@@ -106,7 +89,7 @@
         </div>
 
         <div class="dica-item">
-          <img src="/images/materials/naoReciclaveis/dica2_naoReciclaveis.webp" alt="Aviso de não reciclável" />
+          <img src="<?php echo $base_path; ?>/images/materials/naoReciclaveis/dica2_naoReciclaveis.webp" alt="Aviso de não reciclável" />
           <h3>Identifique os Materiais</h3>
           <p>
             Sempre verifique as embalagens e sinalize o que não é reciclável para facilitar o trabalho de coleta.
@@ -114,7 +97,7 @@
         </div>
 
         <div class="dica-item">
-          <img src="/images/materials/naoReciclaveis/dica3_naoReciclaveis.webp" alt="Lixeira adequada" />
+          <img src="<?php echo $base_path; ?>/images/materials/naoReciclaveis/dica3_naoReciclaveis.webp" alt="Lixeira adequada" />
           <h3>Use Lixeiras Corretas</h3>
           <p>
             Os resíduos não recicláveis devem ir em lixeiras cinza ou preto, de acordo com a separação da sua cidade.
@@ -136,34 +119,14 @@
           <li>Risco de contaminação para animais e humanos</li>
           <li>Contribuição para o entupimento de redes de esgoto e enchentes</li>
         </ul>
-        <a href="/index.html" class="btn btn-cinza"><i class="fas fa-arrow-left"></i> Voltar à Página Inicial</a>
+        <a href="<?php echo $base_path; ?>/index.php" class="btn btn-cinza"><i class="fas fa-arrow-left"></i> Voltar à Página Inicial</a>
       </div>
     </section>
   </main>
 
-  <!-- Rodapé -->
-  <footer>
-    <div class="container">
-      <div class="conteudo-rodape">
-        <div class="logo-rodape">
-          <img src="/images/plant-logo.png" alt="Logo Reciclagem" class="rodape-logo-img" />
-          <h3>Siga-nos</h3>
-          <div class="redes-sociais-icon">
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-linkedin"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-          </div>
-        </div>
-        <div class="contato-info">
-          <h3>Contato</h3>
-          <p>contato@reciclagemsustentavel.com.br</p>
-        </div>
-      </div>
-    </div>
-  </footer>
+  <?php include '../../includes/footer.php'; ?>
 
-  <script src="../js/script.js"></script>
+  <script src="<?php echo $base_path; ?>/js/script.js"></script>
 </body>
 
 </html>

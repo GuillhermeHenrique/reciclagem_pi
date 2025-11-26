@@ -1,3 +1,7 @@
+<?php
+$base_path = "../..";
+$pagina_atual = "materiais";
+?>
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -5,33 +9,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Perigosos</title>
-  <link rel="stylesheet" href="/css/materials/perigosos.css" />
+  <link rel="stylesheet" href="<?php echo $base_path; ?>/css/materials/perigosos.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-  <link rel="shortcut icon" href="/images/favicon/raciclagem-favicon.png" type="image/x-icon">
-
+  <link rel="shortcut icon" href="<?php echo $base_path; ?>/images/favicon/raciclagem-favicon.png" type="image/x-icon">
 </head>
 
 <body>
-  <!-- Cabeçalho -->
-  <header>
-    <div class="container cabecalho">
-      <div class="logo">
-        <img src="/images/plant-logo.png" alt="Logo Reciclagem" class="logo-img" />
-      </div>
-      <nav>
-        <ul>
-          <li><a href="/index.html">Início</a></li>
-          <li><a href="/pages/blog.html">Blog</a></li>
-          <li><a href="/pages/blog.html">Contato</a></li>
-          <li><a href="/pages/equipe.html">Equipe</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+  <?php include '../../includes/header.php'; ?>
 
-  <!-- Destaque -->
   <section class="destaque">
-    <img src="/images/materials/perigosos/banner_perigosos.jpg" alt="Resíduos perigosos" class="destaque-img" />
+    <img src="<?php echo $base_path; ?>/images/materials/perigosos/banner_perigosos.jpg" alt="Resíduos perigosos" class="destaque-img" />
     <div class="sobreposicao"></div>
     <div class="container conteudo-destaque">
       <h1>Perigosos</h1>
@@ -39,7 +26,6 @@
     </div>
   </section>
 
-  <!-- Conteúdo Principal -->
   <main class="container">
     <section class="tipos-residuos">
       <h2><i class="fas fa-skull-crossbones"></i> Resíduos Perigosos</h2>
@@ -49,7 +35,6 @@
       </p>
 
       <div class="grade-beneficios">
-        <!-- Card 1 -->
         <div class="cartao-beneficio">
           <div class="icon">
             <i class="fas fa-biohazard" style="color: #e67e22"></i>
@@ -64,7 +49,6 @@
           </ul>
         </div>
 
-        <!-- Card 2 -->
         <div class="cartao-beneficio">
           <div class="icon">
             <i class="fas fa-radiation-alt" style="color: #e67e22"></i>
@@ -78,7 +62,6 @@
           </ul>
         </div>
 
-        <!-- Card 3 -->
         <div class="cartao-beneficio">
           <div class="icon">
             <i class="fas fa-exclamation-triangle" style="color: #e67e22"></i>
@@ -98,7 +81,7 @@
       <h2><i class="fas fa-lightbulb"></i> Dicas de Segurança</h2>
       <div class="dicas-container">
         <div class="dica-item">
-          <img src="/images/materials/perigosos/dica1_perigosos.png" alt="Ponto de coleta" />
+          <img src="<?php echo $base_path; ?>/images/materials/perigosos/dica1_perigosos.png" alt="Ponto de coleta" />
           <h3>Use Locais Certificados</h3>
           <p>
             Muitos supermercados e farmácias possuem pontos de coleta de pilhas, baterias e medicamentos.
@@ -106,7 +89,7 @@
         </div>
 
         <div class="dica-item">
-          <img src="/images/materials/perigosos/dica2_perigosos.png" alt="Embalagem adequada" />
+          <img src="<?php echo $base_path; ?>/images/materials/perigosos/dica2_perigosos.png" alt="Embalagem adequada" />
           <h3>Proteja os Resíduos</h3>
           <p>
             Evite vazamentos usando embalagens lacradas para transportar materiais perigosos.
@@ -114,7 +97,7 @@
         </div>
 
         <div class="dica-item">
-          <img src="/images/materials/perigosos/dica3_perigosos.png" alt="Informação correta" />
+          <img src="<?php echo $base_path; ?>/images/materials/perigosos/dica3_perigosos.png" alt="Informação correta" />
           <h3>Informe-se</h3>
           <p>
             Consulte o site da prefeitura ou órgãos ambientais para saber onde descartar corretamente cada tipo de
@@ -137,34 +120,14 @@
           <li>Risco de explosões e incêndios em aterros</li>
           <li>Acúmulo de substâncias tóxicas no solo</li>
         </ul>
-        <a href="/index.html" class="btn btn-laranja"><i class="fas fa-arrow-left"></i> Voltar à Página Inicial</a>
+        <a href="<?php echo $base_path; ?>/index.php" class="btn btn-laranja"><i class="fas fa-arrow-left"></i> Voltar à Página Inicial</a>
       </div>
     </section>
   </main>
 
-  <!-- Rodapé -->
-  <footer>
-    <div class="container">
-      <div class="conteudo-rodape">
-        <div class="logo-rodape">
-          <img src="/images/plant-logo.png" alt="Logo Reciclagem" class="rodape-logo-img" />
-          <h3>Siga-nos</h3>
-          <div class="redes-sociais-icon">
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-linkedin"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-          </div>
-        </div>
-        <div class="contato-info">
-          <h3>Contato</h3>
-          <p>contato@reciclagemsustentavel.com.br</p>
-        </div>
-      </div>
-    </div>
-  </footer>
+  <?php include '../../includes/footer.php'; ?>
 
-  <script src="../js/script.js"></script>
+  <script src="<?php echo $base_path; ?>/js/script.js"></script>
 </body>
 
 </html>
