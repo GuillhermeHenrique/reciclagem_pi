@@ -1,34 +1,24 @@
+<?php
+$base_path = "../..";
+$pagina_atual = "materiais";
+?>
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Plástico</title>
-  <link rel="stylesheet" href="/css/materials/plastico.css">
+  <link rel="stylesheet" href="<?php echo $base_path; ?>/css/materials/plastico.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <link rel="shortcut icon" href="/images/favicon/raciclagem-favicon.png" type="image/x-icon">
+  <link rel="shortcut icon" href="<?php echo $base_path; ?>/images/favicon/raciclagem-favicon.png" type="image/x-icon">
 </head>
-<body>
-  <!-- Cabeçalho -->
-  <header>
-    <div class="container cabecalho">
-      <div class="logo">
-        <img src="/images/plant-logo.png" alt="Logo Reciclagem" class="logo-img">
-      </div>
-      <nav>
-        <ul>
-          <li><a href="/index.html">Início</a></li>
-          <li><a href="/pages/blog.html">Blog</a></li>
-          <li><a href="/pages/contato.html">Contato</a></li>
-          <li><a href="/pages/equipe.html">Equipe</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
 
-  <!-- Destaque -->
+<body>
+  <?php include '../../includes/header.php'; ?>
+
   <section class="destaque">
-    <img src="/images/materials/plastico/banner_plastico.jpg" alt="Plásticos para reciclagem" class="destaque-img">
+    <img src="<?php echo $base_path; ?>/images/materials/plastico/banner_plastico.jpg" alt="Plásticos para reciclagem" class="destaque-img">
     <div class="sobreposicao"></div>
     <div class="container conteudo-destaque">
       <h1>Plástico</h1>
@@ -36,7 +26,6 @@
     </div>
   </section>
 
-  <!-- Conteúdo Principal -->
   <main class="container">
     <section class="tipos-residuos">
       <h2><i class="fas fa-bottle-water"></i> Reciclagem de Plástico</h2>
@@ -45,7 +34,6 @@
       </p>
       
       <div class="grade-beneficios">
-        <!-- Card 1 -->
         <div class="cartao-beneficio">
           <div class="icon">
             <i class="fas fa-recycle" style="color: #E73C3C"></i>
@@ -60,7 +48,6 @@
           </ol>
         </div>
         
-        <!-- Card 2 -->
         <div class="cartao-beneficio">
           <div class="icon">
             <i class="fas fa-check-circle" style="color: #E73C3C"></i>
@@ -76,7 +63,6 @@
           </ul>
         </div>
         
-        <!-- Card 3 -->
         <div class="cartao-beneficio">
           <div class="icon">
             <i class="fas fa-times-circle" style="color: #E73C3C"></i>
@@ -98,7 +84,7 @@
       <h2><i class="fas fa-lightbulb"></i> Dicas Práticas</h2>
       <div class="dicas-container">
         <div class="dica-item">
-          <img src="/images/materials/plastico/dica1_plastico.png" alt="Separando plásticos">
+          <img src="<?php echo $base_path; ?>/images/materials/plastico/dica1_plastico.png" alt="Separando plásticos">
           <h3>Preparação</h3>
           <p>
             Lave as embalagens plásticas para retirar restos de produtos. Isso evita contaminação e facilita a reciclagem.
@@ -106,7 +92,7 @@
         </div>
         
         <div class="dica-item">
-          <img src="/images/materials/plastico/dica2_plastico.jpg" alt="Armazenamento correto">
+          <img src="<?php echo $base_path; ?>/images/materials/plastico/dica2_plastico.jpg" alt="Armazenamento correto">
           <h3>Armazenamento</h3>
           <p>
             Armazene os plásticos secos e limpos em caixas ou sacos transparentes. Evite misturar com lixo orgânico.
@@ -114,7 +100,7 @@
         </div>
         
         <div class="dica-item">
-          <img src="/images/materials/plastico/dica3_plastico.png" alt="Coleta seletiva">
+          <img src="<?php echo $base_path; ?>/images/materials/plastico/dica3_plastico.png" alt="Coleta seletiva">
           <h3>Descarte</h3>
           <p>
             Descarte o plástico em locais corretos: coleta seletiva, ecopontos ou cooperativas de reciclagem do seu bairro.
@@ -135,33 +121,13 @@
           <li>Reaproveitamento de materiais para novos produtos</li>
           <li>Menos lixo em aterros sanitários</li>
         </ul>
-        <a href="/index.html" class="btn btn-vermelho"><i class="fas fa-arrow-left"></i> Voltar à Página Inicial</a>
+        <a href="<?php echo $base_path; ?>/index.php" class="btn btn-vermelho"><i class="fas fa-arrow-left"></i> Voltar à Página Inicial</a>
       </div>
     </section>
   </main>
 
-  <!-- Rodapé -->
-  <footer>
-    <div class="container">
-      <div class="conteudo-rodape">
-        <div class="logo-rodape">
-          <img src="/images/plant-logo.png" alt="Logo Reciclagem" class="rodape-logo-img">
-          <h3>Siga-nos</h3>
-          <div class="redes-sociais-icon">
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-linkedin"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-          </div>
-        </div>
-        <div class="contato-info">
-          <h3>Contato</h3>
-          <p>contato@reciclagemsustentavel.com.br</p>
-        </div>
-      </div>
-    </div>
-  </footer>
+  <?php include '../../includes/footer.php'; ?>
 
-  <script src="../js/script.js"></script>
+  <script src="<?php echo $base_path; ?>/js/script.js"></script>
 </body>
 </html>

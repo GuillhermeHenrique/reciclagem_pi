@@ -1,3 +1,7 @@
+<?php
+$base_path = "../..";
+$pagina_atual = "materiais";
+?>
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -5,33 +9,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Vidro</title>
-  <link rel="stylesheet" href="/css/materials/vidro.css" />
+  <link rel="stylesheet" href="<?php echo $base_path; ?>/css/materials/vidro.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-  <link rel="shortcut icon" href="/images/favicon/raciclagem-favicon.png" type="image/x-icon">
-
+  <link rel="shortcut icon" href="<?php echo $base_path; ?>/images/favicon/raciclagem-favicon.png" type="image/x-icon">
 </head>
 
 <body>
-  <!-- Cabeçalho -->
-  <header>
-    <div class="container cabecalho">
-      <div class="logo">
-        <img src="/images/plant-logo.png" alt="Logo Reciclagem" class="logo-img" />
-      </div>
-      <nav>
-        <ul>
-          <li><a href="/index.html">Início</a></li>
-          <li><a href="/pages/blog.html">Blog</a></li>
-          <li><a href="/pages/contato.html">Contato</a></li>
-          <li><a href="/pages/equipe.html">Equipe</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+  <?php include '../../includes/header.php'; ?>
 
-  <!-- Destaque -->
   <section class="destaque">
-    <img src="/images/materials/vidro/banner_vidro.jpg" alt="Reciclagem de vidro" class="destaque-img" />
+    <img src="<?php echo $base_path; ?>/images/materials/vidro/banner_vidro.jpg" alt="Reciclagem de vidro" class="destaque-img" />
     <div class="sobreposicao"></div>
     <div class="container conteudo-destaque">
       <h1>Vidro</h1>
@@ -39,7 +26,6 @@
     </div>
   </section>
 
-  <!-- Conteúdo Principal -->
   <main class="container">
     <section class="tipos-residuos">
       <h2><i class="fas fa-wine-bottle"></i> Reciclagem de Vidro</h2>
@@ -49,7 +35,6 @@
       </p>
 
       <div class="grade-beneficios">
-        <!-- Card 1 -->
         <div class="cartao-beneficio">
           <div class="icon">
             <i class="fas fa-recycle" style="color: #2ECC71"></i>
@@ -64,7 +49,6 @@
           </ol>
         </div>
 
-        <!-- Card 2 -->
         <div class="cartao-beneficio">
           <div class="icon">
             <i class="fas fa-check-circle" style="color: #2ECC71"></i>
@@ -79,7 +63,6 @@
           </ul>
         </div>
 
-        <!-- Card 3 -->
         <div class="cartao-beneficio">
           <div class="icon">
             <i class="fas fa-times-circle" style="color: #27AE60"></i>
@@ -100,7 +83,7 @@
       <h2><i class="fas fa-lightbulb"></i> Dicas Práticas</h2>
       <div class="dicas-container">
         <div class="dica-item">
-          <img src="/images/materials/vidro/dica1_vidro.jpg" alt="Separando vidros" />
+          <img src="<?php echo $base_path; ?>/images/materials/vidro/dica1_vidro.jpg" alt="Separando vidros" />
           <h3>Preparação</h3>
           <p>
             Lave os vidros para remover resíduos, retire tampas e rótulos quando possível para facilitar a reciclagem.
@@ -108,7 +91,7 @@
         </div>
 
         <div class="dica-item">
-          <img src="/images/materials/vidro/dica2_vidro.jpg" alt="Armazenamento correto" />
+          <img src="<?php echo $base_path; ?>/images/materials/vidro/dica2_vidro.jpg" alt="Armazenamento correto" />
           <h3>Armazenamento</h3>
           <p>
             Guarde os vidros em locais seguros para evitar acidentes e quebras antes da coleta.
@@ -116,7 +99,7 @@
         </div>
 
         <div class="dica-item">
-          <img src="/images/materials/vidro/dica3_vidro.png" alt="Coleta seletiva" />
+          <img src="<?php echo $base_path; ?>/images/materials/vidro/dica3_vidro.png" alt="Coleta seletiva" />
           <h3>Descarte</h3>
           <p>
             Utilize pontos de coleta seletiva e cooperativas para garantir o destino correto dos vidros recicláveis.
@@ -138,34 +121,14 @@
           <li>Diminuição do volume de resíduos sólidos</li>
           <li>Preservação dos recursos naturais</li>
         </ul>
-        <a href="/index.html" class="btn btn-verde"><i class="fas fa-arrow-left"></i> Voltar à Página Inicial</a>
+        <a href="<?php echo $base_path; ?>/index.php" class="btn btn-verde"><i class="fas fa-arrow-left"></i> Voltar à Página Inicial</a>
       </div>
     </section>
   </main>
 
-  <!-- Rodapé -->
-  <footer>
-    <div class="container">
-      <div class="conteudo-rodape">
-        <div class="logo-rodape">
-          <img src="/images/plant-logo.png" alt="Logo Reciclagem" class="rodape-logo-img" />
-          <h3>Siga-nos</h3>
-          <div class="redes-sociais-icon">
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-linkedin"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-          </div>
-        </div>
-        <div class="contato-info">
-          <h3>Contato</h3>
-          <p>contato@reciclagemsustentavel.com.br</p>
-        </div>
-      </div>
-    </div>
-  </footer>
+  <?php include '../../includes/footer.php'; ?>
 
-  <script src="../js/script.js"></script>
+  <script src="<?php echo $base_path; ?>/js/script.js"></script>
 </body>
 
 </html>
